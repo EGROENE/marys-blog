@@ -1,10 +1,99 @@
 :root {
     --size-8: 0.5rem;
     --size-16: 1rem;
+    --size-20: 1.25rem;
     --size-24: 1.5rem;
+    --size-28: 1.75rem;
     --size-32: 2rem;
     --size-40: 2.5rem;
     --size-48: 3rem;
     --size-56: 3.5rem;
     --size-64: 4rem;
+    --bg: white;
+    --default-text-color: black;
+    --theme-color-primary: #ff7cef;
+    --header-font: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--default-text-color);
+}
+
+#global-header {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--header-font);
+    border-bottom: 2px solid gray;
+    padding-bottom: var(--size-16);
+}
+
+#global-header-logo-and-headings {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-part {
+    width: 28%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo-part:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#logo-part img {
+    width: 75%;
+    max-width: 100%;
+}
+
+#logo-part header {
+    display: inline;
+}
+
+#logo-headers {
+    margin-top: -18px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-headers header:first-child {
+    font-size: var(--size-28);
+}
+
+#logo-headers header:nth-child(2) {
+    font-size: var(--size-20);
+}
+
+#global-header-nav {
+    width: 50%;
+}
+
+#global-header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+#global-header-nav ul a {
+    font-size: var(--size-24);
+    padding-bottom: 4px;
+}
+
+#global-header-nav ul a:hover {
+    color: var(--theme-color-primary);
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 4px solid var(--theme-color-primary);
 }
