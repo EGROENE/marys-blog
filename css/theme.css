@@ -15,6 +15,12 @@
     --header-font: 'Dosis', sans-serif;
 }
 
+/* Colors that should be changed when theme is dark */
+[data-theme="dark"] {
+    --bg: black;
+    --default-text-color: white;
+} 
+
 a {
     text-decoration: none;
     color: var(--default-text-color);
