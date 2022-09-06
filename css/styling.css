@@ -13,6 +13,7 @@
 .preview-author-date h2,
 .post-preview p {
     color: var(--default-text-color);
+    font-family: var(--header-font);
 }
 
 .post-preview h1 {
@@ -23,6 +24,10 @@
 
 .preview-author-date {
     margin-left: 15%;
+}
+
+.preview-author-date h2 {
+    width: 575%;
 }
 
 .preview-author-date header {
@@ -43,6 +48,6 @@
 }
 
 .post-preview p {
-    
+    font-size: var(--size-24);
 }
 /* END OF POST PREVIEWS STYLING */
