@@ -74,9 +74,10 @@ const allPosts = [
 // Var to get array of all sections where previews of posts should be displayed:
 let previewSections = document.getElementsByClassName('post-previews');
 // Function to populate post previews on index.html:
+// Function should only populate index.html with the first 3 (or so) posts from allPosts:
 /* const popPostPreviews = () => {
     for (const previewSection of previewSections) {
-        for (const post of allPosts) {
+        for (let i = 0; i < allPosts.length - (allPosts.length - 5); i++) {
             previewSection.innerHTML +=
             '<div class="post-preview">'
             '<h1>' + post.postTitle + '</h1>'
