@@ -1,3 +1,4 @@
+/* THIS DOCUMENT CONTAINS STYLING OF THINGS THAT ARE PRESENT ON EVERY PAGE */
 :root {
     --size-8: 0.5rem;
     --size-16: 1rem;
@@ -11,21 +12,134 @@
     --size-64: 4rem;
     --bg: white;
     --default-text-color: black;
+    --default-text-color-reverse: white;
     --theme-color-primary: #ff7cef;
     --header-font: 'Dosis', sans-serif;
 }
 
-/* Colors that should be changed when theme is dark */
-[data-theme="dark"] {
-    --bg: black;
-    --default-text-color: white;
-} 
+body {
+    background-color: var(--bg);
+}
 
 a {
     text-decoration: none;
     color: var(--default-text-color);
 }
 
+/* STYLING OF LIGHT/DARK THEMES AND THE TOGGLER:
+/* Colors that should be changed when theme is dark */
+/* Whichever data theme that's defined below is the default */
+[data-theme="dark"] {
+    --bg: black;
+    --default-text-color: white;
+    --default-text-color-reverse: black;
+}
+
+/* This is the panel where user can toggle themes */
+.theme-panel {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    transition: 0.4s;
+    transform: translateX(100%); /* This hides the panel. Panel doesn't include the arrow to show/hide it */
+}
+
+/* Adding .open (done with JS) will show the panel */
+.theme-panel.open {
+    transform: translateX(0);
+}
+
+/* This styles the body of the theme panel, which contains the heading & toggle buttons */
+.theme-panel-body {
+    background-color: var(--theme-color-primary);
+    border: transparent;
+    max-width: 185px;
+    padding: 15px 13px;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    position: relative;
+}
+
+/* Styles the heading in the theme panel */
+.theme-panel-body > span {
+    color: var(--default-text-color-reverse);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 8px;
+    display: inline-flex;
+    font-family: Dosis, sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-20);
+}
+
+/* Styles the container of the buttons in the theme-panel */
+.theme-panel-body .btn-group {
+    /* box-shadow: 12px 34px rgba(22, 28, 45, 0.7); */
+    border-radius: 33px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    max-width: 153px;
+}
+
+/* Styles the toggle button that is not selected */
+.theme-panel-body .btn-group .switcher-btn {
+    background: transparent;
+    border: none;
+    width: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    height: 42px;
+    padding-left: 15px;
+    padding: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+/* Styles toggle button that is active */
+.theme-panel-body .btn-group .switcher-btn.active {
+    background-color: #ced4e7;
+}
+
+/* Styles the tab to show/hide the theme panel */
+.theme-panel-body .theme-tab {
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 50px;
+    border: 0;
+    background: var(--theme-color-primary);
+    color: var(--default-text-color);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    left: 1px;
+}
+
+/* Styles the icon in the theme tab */
+.theme-tab i {
+    font-size: 1rem;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+/* Inverts the icon when the theme panel is open */
+.theme-panel.open .theme-tab i {
+    transform: scaleX(-1);
+}
+
+/* Styles all .btn & button that don't have pseudoclass :disabled or .disabled class */
+.btn:not(:disabled):not(.disabled),
+button:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+/* STYLING OF GLOBAL HEADER AND ITS ELEMENTS */
 #global-header {
     display: flex;
     max-width: 100%;
