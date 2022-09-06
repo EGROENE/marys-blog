@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light"> <!--Default theme-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,24 @@
 
     <!--IMPORT GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Inconsolata&family=Maven+Pro&family=PT+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!--LINK TO FONTAWESOME KIT-->
+    <script src="https://kit.fontawesome.com/5f2ab24bd1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--theme-panel div is for toggling of light/dark themes-->
+    <div class="theme-panel">
+        <div class="theme-panel-body">
+            <span>Change Theme</span>
+            <div class="btn-group">
+                <button data-toggle="light" class="switcher-btn active">Light</button>
+                <button data-toggle="dark" class="switcher-btn">Dark</button>
+            </div>
+            <button class="theme-tab">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
     <section id="global-header">
         <div id="global-header-logo-and-headings">
             <a href="./index.html" id="logo-part">
