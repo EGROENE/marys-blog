@@ -66,8 +66,8 @@ for (const elem of switcher) {
 }
 // END JS FOR TOGGLING OF THEME
 
-// Array containing all articles in their own objects:
-const allPosts = [
+// Array containing all article previews in their own objects:
+const allPostPreviews = [
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgAlt: 'ethan-groene',  postTitle: 'How to Care for a Turtle', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
 ]
 //pubDate: (new Date('September 5, 2022')), pubDateNum: pubDate.getTime(),
@@ -93,18 +93,18 @@ const popPostPreviews = () => {
             + '</div>'
         }
     } */
-    for (let i = 0; i < allPosts.length; i++) {
+    for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
             document.getElementById('post-previews-homepage').innerHTML +=
             '<div class="post-preview">'
-            + '<h1>' + allPosts[i].postTitle + '</h1>'
+            + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
             + '<div class="author-info-container">'
-            + '<img  src="' + allPosts[i].authorImgFromIndex + '"' + 'alt="' + allPosts[i].authorImgAlt + '">'
+            + '<img  src="' + allPostPreviews[i].authorImgFromIndex + '"' + 'alt="' + allPostPreviews[i].authorImgAlt + '">'
             + '<div class="preview-author-date">'
-            + '<h2>'+ allPosts[i].author + '</h2>'
-            //+ '<header>' + allPosts[i].pubDate + '</header>'
+            + '<h2>'+ allPostPreviews[i].author + '</h2>'
+            //+ '<header>' + allPostPreviews[i].pubDate + '</header>'
             + '</div>'
             + '</div>'
-            + '<p>' + allPosts[i].prevText + '...</p>'
+            + '<p>' + allPostPreviews[i].prevText + '...</p>'
             + '</div>'
         }
     }
