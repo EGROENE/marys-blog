@@ -6,6 +6,7 @@
 .post-preview {
     padding: 2%;
     border: 2px solid gray;
+    margin-top: var(--size-20);
 }
 
 .post-preview h1,
