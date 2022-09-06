@@ -1,6 +1,6 @@
 /* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
-.post-previews {
-    margin: 2% 6% 0 6%;
+#post-previews-homepage {
+    margin: 0 6%;
 }
 
 .post-preview {
