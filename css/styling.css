@@ -1,0 +1,47 @@
+/* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
+.post-previews {
+    margin: 2% 6% 0 6%;
+}
+
+.post-preview {
+    padding: 2%;
+    border: 2px solid gray;
+}
+
+.post-preview h1,
+.preview-author-date h2,
+.post-preview p {
+    color: var(--default-text-color);
+}
+
+.post-preview h1 {
+    font-family: var(--header-font);
+    font-size: var(--size-48);
+    margin: var(--size-8) 0;
+}
+
+.preview-author-date {
+    margin-left: 15%;
+}
+
+.preview-author-date header {
+    color: gray;
+}
+
+.author-info-container {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-info-container img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.post-preview p {
+    
+}
+/* END OF POST PREVIEWS STYLING */
