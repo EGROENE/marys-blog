@@ -21,6 +21,10 @@ body {
     background-color: var(--bg);
 }
 
+h2 {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: var(--default-text-color);
