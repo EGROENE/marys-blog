@@ -79,7 +79,7 @@
 @media screen and (min-width: 1680px) and (max-width: 2000px) {
     /* START index.html STYLING */
     #post-previews-homepage {
-        margin: 48px 12%;
+        margin: 13px 12%;
     }
     #post-previews-homepage div:nth-child(2) {
         transform: none;
