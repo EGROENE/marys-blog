@@ -1,6 +1,7 @@
 /* THIS DOCUMENT CONTAINS STYLING OF THINGS THAT ARE PRESENT ON EVERY PAGE */
 :root {
     --size-8: 0.5rem;
+    --size-12: 0.75rem;
     --size-16: 1rem;
     --size-20: 1.25rem;
     --size-24: 1.5rem;
