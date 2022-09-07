@@ -1,0 +1,77 @@
+@media screen and (min-width: 2560px) {
+    /* START DEFAULT STYLING */
+    #logo-part img {
+        width: 90%;
+    }
+    #logo-headers header:first-child {
+        font-size: var(--size-56);
+    }
+    #logo-headers header:nth-child(2) {
+        font-size: var(--size-40);
+    }
+    #global-header {
+        border-bottom: 4px solid gray;
+        padding-bottom: var(--size-32);
+    }
+    #global-header-nav ul a {
+        font-size: var(--size-48);
+        padding-bottom: var(--size-8);
+    }
+    .socials-panel a {
+        padding: 24px;
+    }
+    .socials-panel i {
+        font-size: var(--size-64);
+    }
+    .theme-panel-body {
+        max-width: 370px;
+        padding: 30px 26px;
+    }
+    .theme-panel-body .theme-tab {
+        width: 60px;
+        height: 100px;
+    }
+    .theme-tab i {
+        font-size: var(--size-32);
+    }
+    .theme-panel-body > span {
+        font-size: var(--size-40);
+    }
+    .theme-panel-body .btn-group {
+        max-width: 306px;
+        margin-top: var(--size-12);
+    }
+    .theme-panel-body .btn-group .switcher-btn {
+        height: var(--size-64);
+        font-size: var(--size-24);
+    }
+    #socials a {
+        font-size: 80px;
+        margin-right: 80px;
+    }
+    /* END DEFAULT STYLING */
+
+    /* START index.html STYLING */
+    .post-preview {
+        padding: 2%;
+        border: 2px solid gray;
+        margin-top: var(--size-40);
+    }
+    .post-preview h1 {
+        font-size: 96px;
+        margin: var(--size-16) 0;
+    }
+    .author-info-container {
+        width: 20%;
+    }
+    .preview-author-date h2 {
+        font-size: var(--size-48);
+    }
+    .preview-author-date header {
+        font-size: 40px;
+    }
+    .post-preview p {
+        font-size: var(--size-48);
+    }
+    /* END index.html STYLING */
+}
