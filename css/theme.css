@@ -228,3 +228,23 @@ button:not(:disabled):not(.disabled) {
     transition: 0.3s;
     border-bottom: 4px solid var(--theme-color-primary);
 }
+
+footer {
+    text-align: center;
+    font-size: var(--size-16);
+    color: gray;
+    margin-top: var(--size-56);
+}
+
+#socials a {
+    color: gray;
+    font-size: var(--size-40);
+    margin-right: var(--size-40);
+}
+
+#socials a:last-child {margin-right: 0;}
+
+#socials a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
