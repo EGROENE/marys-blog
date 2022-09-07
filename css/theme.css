@@ -26,6 +26,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
+    color: var(--default-text-color);
 }
 
 h1,
