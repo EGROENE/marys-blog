@@ -18,11 +18,9 @@
 .preview-author-date h2,
 .post-preview p {
     color: var(--default-text-color);
-    font-family: var(--header-font);
 }
 
 .post-preview h1 {
-    font-family: var(--header-font);
     font-size: var(--size-48);
     margin: var(--size-8) 0;
 }

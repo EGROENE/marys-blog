@@ -14,11 +14,18 @@
     --default-text-color: black;
     --default-text-color-reverse: white;
     --theme-color-primary: #ff7cef;
-    --header-font: 'Dosis', sans-serif;
+    --main-font: 'Dosis', sans-serif;
 }
 
 body {
     background-color: var(--bg);
+}
+
+h1,
+h2,
+header,
+p {
+    font-family: var(--main-font);
 }
 
 h2 {
@@ -149,7 +156,7 @@ button:not(:disabled):not(.disabled) {
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--header-font);
+    font-family: var(--main-font);
     border-bottom: 2px solid gray;
     padding-bottom: var(--size-16);
 }
