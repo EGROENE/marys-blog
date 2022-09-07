@@ -1,6 +1,25 @@
 /* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 #post-previews-homepage {
     margin: 0 6%;
+}
+
+/* First item on pages with post previews should appear with no transition */
+#post-previews-homepage div:first-child {
+    transform: none;
+    opacity: 1;
+    transition: none;
 }
 
 .post-preview {
