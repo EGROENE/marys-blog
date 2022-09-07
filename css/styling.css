@@ -36,6 +36,8 @@
 .preview-author-date header {
     color: gray;
     width: 320%;
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
 .author-info-container {
