@@ -96,6 +96,7 @@ const popPostPreviews = () => {
     for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
             document.getElementById('post-previews-homepage').innerHTML +=
             '<div class="post-preview">'
+            + '<a href="' + allPostPreviews[i].linkFromIndex + '">'
             + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
             + '<div class="author-info-container">'
             + '<img  src="' + allPostPreviews[i].authorImgFromIndex + '"' + 'alt="' + allPostPreviews[i].authorImgAlt + '">'
@@ -105,6 +106,7 @@ const popPostPreviews = () => {
             + '</div>'
             + '</div>'
             + '<p>' + allPostPreviews[i].prevText + '...</p>'
+            + '</a>'
             + '</div>'
         }
     }
