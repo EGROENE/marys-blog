@@ -66,6 +66,25 @@ for (const elem of switcher) {
 }
 // END JS FOR TOGGLING OF THEME
 
+// START JS FOR ANIMATING POST PREVIEWS ON SCROLL
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+}
+window.addEventListener("scroll", reveal);
+// To check the scroll position on page load:
+reveal();
+// END JS FOR ANIMATING POST PREVIEWS ON SCROLL
+
 // Array containing all article previews in their own objects:
 const allPostPreviews = [
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Brennan Huff', authorImgFromIndex: './assets/images/brennan-huff.jpg', authorImgFromAllPosts: '../assets/images/brennan-huff.jpg', authorImgAlt: 'brennan-huff', pubDate: (new Date('September 7, 2022').toLocaleString("en-US", {day: "numeric", month: "short", year: "numeric"})), dateNum: (new Date('September 7, 2022').getTime()), postTitle: 'How to Still Live With Your Parents As a 39-Year-Old', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
@@ -89,7 +108,7 @@ const popPostPreviews = () => {
     for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
             console.log(allPostPreviews[i].dateNum);
             document.getElementById('post-previews-homepage').innerHTML +=
-            '<div class="post-preview">'
+            '<div class="post-preview reveal">'
             + '<a href="' + allPostPreviews[i].linkFromIndex + '">'
             + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
             + '<div class="author-info-container">'
