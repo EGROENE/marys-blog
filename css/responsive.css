@@ -75,3 +75,16 @@
     }
     /* END index.html STYLING */
 }
+
+@media screen and (min-width: 1680px) {
+    /* START index.html STYLING */
+    #post-previews-homepage {
+        margin: 48px 12%;
+    }
+    #post-previews-homepage div:nth-child(2) {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+    /* END index.html STYLING */
+}
