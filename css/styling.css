@@ -9,6 +9,11 @@
     margin-top: var(--size-20);
 }
 
+.post-preview a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .post-preview h1,
 .preview-author-date h2,
 .post-preview p {
