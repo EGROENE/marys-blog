@@ -88,3 +88,19 @@
     }
     /* END index.html STYLING */
 }
+
+@media screen and (max-width: 768px) {
+    /* START DEFAULT STYLING */
+    #logo-part {
+        width: 53%;
+    }    
+    /* END DEFAULT STYLING */
+
+    /* START index.html STYLING */
+    #post-previews-homepage div:nth-child(2) {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+    /* END index.html STYLING */
+}
