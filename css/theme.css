@@ -22,6 +22,12 @@ body {
     background-color: var(--bg);
 }
 
+.page-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
 h1,
 h2,
 header,
