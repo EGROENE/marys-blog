@@ -54,4 +54,12 @@
 .post-preview p {
     font-size: var(--size-24);
 }
+
+.read-more-link {
+    text-transform: lowercase;
+    text-decoration: underline;
+    color: var(--theme-color-primary);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 /* END OF POST PREVIEWS STYLING */
