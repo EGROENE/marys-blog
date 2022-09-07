@@ -86,22 +86,6 @@ const allPostPreviews = [
 // Function to populate post previews on index.html:
 // Function should only populate index.html with the first 3 (or so) posts from allPosts:
 const popPostPreviews = () => {
-    /* for (const previewSection of previewSections) {
-        for (let i = 0; i < allPosts.length; i++) {
-            previewSection.innerHTML +=
-            '<div class="post-preview">'
-            '<h1>' + post.postTitle + '</h1>'
-            + '<div class="author-info-container">'
-            + '<img  src=' + post.authorImg + 'alt=' + post.authorImgAlt
-            + '<div class="preview-author-date">'
-            + '<h2>'+ post.author + '</h2>'
-            + '<header>' + post.pubDate + '</header>'
-            + '</div>'
-            + '</div>'
-            + '<p>' + post.postText.substring(0, 50) + '...</p>'
-            + '</div>'
-        }
-    } */
     for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
             console.log(allPostPreviews[i].dateNum);
             document.getElementById('post-previews-homepage').innerHTML +=
