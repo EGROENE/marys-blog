@@ -130,7 +130,7 @@
         width: 126%;
     }
     .theme-panel {
-        right: 55px;
+        right: 125px;
     }
     #global-header {
         flex-direction: column;
@@ -148,4 +148,10 @@
         display: none;
     }
     /* END DEFAULT STYLING */
+
+    /* START index.html STYLING */
+    .author-info-container {
+        width: 24%;
+    }
+    /* END index.html STYLING */
 }
