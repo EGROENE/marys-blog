@@ -1,7 +1,7 @@
 /* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(10px);
     opacity: 0;
     transition: 1s all ease;
 }
