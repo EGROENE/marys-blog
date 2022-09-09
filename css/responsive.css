@@ -89,6 +89,14 @@
     /* END index.html STYLING */
 }
 
+@media screen and (min-width: 1280px) {
+    /* START DEFAULT STYLING */
+    body {
+        width: 91%;
+    }
+    /* END DEFAULT STYLING */
+}
+
 @media screen and (max-width: 810px) {
     /* START index.html STYLING */
     #post-previews-homepage div:nth-child(2) {
