@@ -11,12 +11,14 @@
     opacity: 1;
 }
 
-#post-previews-homepage {
+#post-previews-homepage,
+#post-previews-all {
     margin: 0 6%;
 }
 
 /* First item on pages with post previews should appear with no transition */
-#post-previews-homepage div:first-child {
+#post-previews-homepage div:first-child,
+#post-previews-all div:first-child {
     transform: none;
     opacity: 1;
     transition: none;
