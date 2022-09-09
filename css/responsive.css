@@ -101,9 +101,18 @@
 
 @media screen and (max-width: 768px) {
     /* START DEFAULT STYLING */
+    body {
+        width: 90%;
+    }
     #logo-part {
         width: 53%;
-    }    
+    }
+    .socials-panel a {
+        padding: 6px;
+    }
+    .theme-panel {
+        right: 60px;
+    }
     /* END DEFAULT STYLING */
 
     /* START index.html STYLING */
