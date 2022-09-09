@@ -127,7 +127,7 @@
 @media screen and (max-width: 425px) {
     /* START DEFAULT STYLING */
     body {
-        width: 126%;
+        width: 175%;
     }
     .theme-panel {
         right: 125px;
@@ -156,7 +156,7 @@
     /* END index.html STYLING */
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
     /* START DEFAULT STYLING */
     body {
         width: 174%;
