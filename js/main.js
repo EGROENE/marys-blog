@@ -121,7 +121,26 @@ const popPostPreviews = () => {
             + '<p>' + allPostPreviews[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
             + '</a>'
             + '</div>'
-        }
     }
+}
 
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
+const popPostPreviewsAll = () => {
+    for (let i = 0; i < allPostPreviews.length; i++) {
+        console.log(allPostPreviews[i].dateNum);
+        document.getElementById('post-previews-all').innerHTML +=
+        '<div class="post-preview reveal">'
+        + '<a href="' + allPostPreviews[i].linkFromAllPosts + '">'
+        + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
+        + '<div class="author-info-container">'
+        + '<img  src="' + allPostPreviews[i].authorImgFromAllPosts + '"' + 'alt="' + allPostPreviews[i].authorImgAlt + '">'
+        + '<div class="preview-author-date">'
+        + '<h2>'+ allPostPreviews[i].author + '</h2>'
+        + '<header>' + allPostPreviews[i].pubDate + '</header>'
+        + '</div>'
+        + '</div>'
+        + '<p>' + allPostPreviews[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
+        + '</a>'
+        + '</div>'
+    }
+}
