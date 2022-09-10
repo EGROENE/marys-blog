@@ -62,8 +62,14 @@
             </ul>
         </nav>
     </section>
-    <h1 class="page-header">All Blog Posts</h1>
+    <h1 class="page-header" onclick="inAscendingOrder()"">All Blog Posts</h1>
     <!--END OMNIPRESENT CODE-->
+    <div id="sort-container">
+        <select name="sortby-dropdown" id="sortby-dropdown">
+            <option value="new-old" onclick="inDescendingOrder()">New to Old</option>
+            <option value="old-new" onclick="inAscendingOrder()"">Old to New</option>
+        </select>
+    </div>
     <section id="post-previews-all"></section>
     <!--START OMNIPRESENT CODE-->
     <footer>
