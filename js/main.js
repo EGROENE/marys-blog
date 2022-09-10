@@ -94,11 +94,6 @@ const allPostPreviews = [
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Dan Campbell', authorImgFromIndex: './assets/images/dan-campbell.jpg', authorImgFromAllPosts: '../assets/images/dan-campbell.jpg', authorImgAlt: 'kate-hudson', pubDate: (new Date('August 5, 2022').toLocaleString("en-US", {day: "numeric", month: "short", year: "numeric"})), dateNum: (new Date('August 5, 2022').getTime()), postTitle: 'How I Brought Hope Back to a Historically God-Awful Team & a Miserable City', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgAlt: 'ethan-groene', pubDate: (new Date('August 3, 2022').toLocaleString("en-US", {day: "numeric", month: "short", year: "numeric"})), dateNum: (new Date('August 3, 2022').getTime()), postTitle: 'How to Care for a Dog', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
 ]
-// Function to arrange items in allPostPreviews in descending order by date:
-// Should be called on page load of index.html & allposts.html and in sort dropdown menu
-
-// Function to arrange items in allPostPreviews in ascending order by date:
-// Should be called on its corresponding option in sort dropdown menu
 
 // Var to get array of all sections where previews of posts should be displayed:
 //let previewSections = document.getElementsByClassName('post-previews');
@@ -124,9 +119,13 @@ const popPostPreviews = () => {
     }
 }
 
+// Init array to store items from allPostPrevs that have been displayed on the site:
+let displayedPrevs = [];
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
 const popPostPreviewsAll = () => {
     for (let i = 0; i < allPostPreviews.length; i++) {
+        displayedPrevs.push(allPostPreviews[i]);
+        console.log(displayedPrevs.length);
         console.log(allPostPreviews[i].dateNum);
         document.getElementById('post-previews-all').innerHTML +=
         '<div class="post-preview reveal">'
@@ -143,4 +142,39 @@ const popPostPreviewsAll = () => {
         + '</a>'
         + '</div>'
     }
+    console.log(displayedPrevs);
+}
+
+// Function to arrange items in allPostPreviews in descending order by date:
+// Should be called on page load of index.html & allposts.html and in sort dropdown menu
+/* const inDescendingOrder = () => {
+    allPostPreviews.dateNum.sort(function (a, b) {
+        return a - b;
+    }) 
+} */
+
+// Function to hide noncurrent prevs:
+// First prev after sort as well must appear without scrolling, just like first prev does on page load
+// Remove noncurrent prevs from displayedPrevs & maybe populate from displayedPrevs
+let postPrevs = document.getElementsByClassName('post-preview reveal');
+console.log(postPrevs)
+const hideNoncurrentPrevs = () => {
+    for (let i = 0; i < postPrevs.length; i++) {
+        postPrevs[i].classList.add("hide-preview")
+    }
+    console.log('fuck');
+    console.log(postPrevs);
+}
+
+// Function to arrange items in allPostPreviews in ascending order by date:
+// Should be called on its corresponding option in sort dropdown menu
+const inAscendingOrder = () => {
+    console.log('hi');
+    allPostPreviews.sort((a, b) => {
+        return a.dateNum - b.dateNum;
+    })
+    // Hide noncurrent prevs:
+    hideNoncurrentPrevs();
+    // Repopulate with sorted prevs:
+    popPostPreviewsAll();
 }
