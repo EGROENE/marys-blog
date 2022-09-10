@@ -156,7 +156,9 @@ const popPostPreviewsAll = () => {
 // Function to hide noncurrent prevs:
 // First prev after sort as well must appear without scrolling, just like first prev does on page load
 // Remove noncurrent prevs from displayedPrevs & maybe populate from displayedPrevs
-let postPrevs = document.getElementsByClassName('post-preview reveal');
+// Or, splice off all noncurrent prevs from postPrevs and populate with new function inside sort function that is based off spliced postPrevs
+// Or, add active class to first item in postPrevs whose class list doesn't contain hide-preview
+let postPrevs = document.getElementsByClassName('post-preview');
 console.log(postPrevs)
 const hideNoncurrentPrevs = () => {
     for (let i = 0; i < postPrevs.length; i++) {
@@ -175,6 +177,8 @@ const inAscendingOrder = () => {
     })
     // Hide noncurrent prevs:
     hideNoncurrentPrevs();
+    // Automatically display first prev after sort:
+    
     // Repopulate with sorted prevs:
     popPostPreviewsAll();
 }
