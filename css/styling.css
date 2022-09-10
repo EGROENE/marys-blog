@@ -1,4 +1,8 @@
 /* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
+.hide-preview {
+    display: none;
+}
+
 .reveal {
     position: relative;
     transform: translateY(10px);
