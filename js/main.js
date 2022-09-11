@@ -94,6 +94,7 @@ const allPostPreviews = [
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Dan Campbell', authorImgFromIndex: './assets/images/dan-campbell.jpg', authorImgFromAllPosts: '../assets/images/dan-campbell.jpg', authorImgAlt: 'kate-hudson', pubDate: (new Date('August 5, 2022').toLocaleString("en-US", {day: "numeric", month: "short", year: "numeric"})), dateNum: (new Date('August 5, 2022').getTime()), postTitle: 'How I Brought Hope Back to a Historically God-Awful Team & a Miserable City', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgAlt: 'ethan-groene', pubDate: (new Date('August 3, 2022').toLocaleString("en-US", {day: "numeric", month: "short", year: "numeric"})), dateNum: (new Date('August 3, 2022').getTime()), postTitle: 'How to Care for a Dog', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
 ]
+let totalPostQuantity = allPostPreviews.length;
 
 // Var to get array of all sections where previews of posts should be displayed:
 //let previewSections = document.getElementsByClassName('post-previews');
@@ -142,7 +143,6 @@ const popPostPreviewsAll = () => {
         + '</a>'
         + '</div>'
     }
-    console.log(displayedPrevs);
 }
 
 // Function to arrange items in allPostPreviews in descending order by date:
@@ -158,8 +158,9 @@ const popPostPreviewsAll = () => {
 // Remove noncurrent prevs from displayedPrevs & maybe populate from displayedPrevs
 // Or, splice off all noncurrent prevs from postPrevs and populate with new function inside sort function that is based off spliced postPrevs
 // Or, add active class to first item in postPrevs whose class list doesn't contain hide-preview
-let postPrevs = document.getElementsByClassName('post-preview');
+const postPrevs = document.getElementsByClassName('post-preview');
 console.log(postPrevs)
+console.log(typeof postPrevs)
 const hideNoncurrentPrevs = () => {
     for (let i = 0; i < postPrevs.length; i++) {
         postPrevs[i].classList.add("hide-preview")
@@ -178,7 +179,7 @@ const inAscendingOrder = () => {
     // Hide noncurrent prevs:
     hideNoncurrentPrevs();
     // Automatically display first prev after sort:
-    
+    autoDisplayFirstItemAfterSorting();   
     // Repopulate with sorted prevs:
     popPostPreviewsAll();
 }
