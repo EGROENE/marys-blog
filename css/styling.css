@@ -21,6 +21,8 @@
 }
 
 /* First item on pages with post previews should appear with no transition */
+#post-previews-homepage div:first-child,
+#post-previews-all div:first-child,
 .post-preview.first-preview {
     transform: none;
     opacity: 1;
