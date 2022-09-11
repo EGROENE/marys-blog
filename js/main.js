@@ -100,7 +100,6 @@ let totalPostQuantity = allPostPreviews.length;
 let displayedPrevs = [];
 
 // Var to get array of all sections where previews of posts should be displayed:
-//let previewSections = document.getElementsByClassName('post-previews');
 // Function to populate post previews on index.html:
 // Function should only populate index.html with the first 3 (or so) posts from allPosts:
 const popPostPreviews = () => {
@@ -163,6 +162,30 @@ const popPostPreviewsAll = () => {
     }
 }
 
+// Function to hide noncurrent prevs:
+// First prev after sort as well must appear without scrolling, just like first prev does on page load
+// Remove noncurrent prevs from displayedPrevs & maybe populate from displayedPrevs
+// Or, splice off all noncurrent prevs from postPrevs and populate with new function inside sort function that is based off spliced postPrevs
+// Or, add active class to first item in postPrevs whose class list doesn't contain hide-preview
+const postPrevs = document.getElementsByClassName('post-preview');
+const hideNoncurrentPrevs = () => {
+    for (let i = 0; i < postPrevs.length; i++) {
+        postPrevs[i].classList.add("hide-preview")
+    }
+}
+
+// Function to arrange items in allPostPreviews in ascending order by date:
+// Should be called on its corresponding option in sort dropdown menu
+const inAscendingOrder = () => {
+    displayedPrevs.sort((a, b) => {
+        return a.dateNum - b.dateNum;
+    })
+    // Hide noncurrent prevs:
+    hideNoncurrentPrevs();
+    // Repopulate with sorted prevs:
+    popPostPreviewsAll();
+}
+
 // Function to arrange items in allPostPreviews in descending order by date:
 // Should be called on page load of index.html & allposts.html and in sort dropdown menu
 /* const inDescendingOrder = () => {
@@ -170,34 +193,3 @@ const popPostPreviewsAll = () => {
         return a - b;
     }) 
 } */
-
-// Function to hide noncurrent prevs:
-// First prev after sort as well must appear without scrolling, just like first prev does on page load
-// Remove noncurrent prevs from displayedPrevs & maybe populate from displayedPrevs
-// Or, splice off all noncurrent prevs from postPrevs and populate with new function inside sort function that is based off spliced postPrevs
-// Or, add active class to first item in postPrevs whose class list doesn't contain hide-preview
-const postPrevs = document.getElementsByClassName('post-preview');
-console.log(postPrevs)
-console.log(typeof postPrevs)
-const hideNoncurrentPrevs = () => {
-    for (let i = 0; i < postPrevs.length; i++) {
-        postPrevs[i].classList.add("hide-preview")
-    }
-    console.log('fuck');
-    console.log(postPrevs);
-}
-
-// Function to arrange items in allPostPreviews in ascending order by date:
-// Should be called on its corresponding option in sort dropdown menu
-const inAscendingOrder = () => {
-    console.log('hi');
-    displayedPrevs.sort((a, b) => {
-        return a.dateNum - b.dateNum;
-    })
-    // Hide noncurrent prevs:
-    hideNoncurrentPrevs();
-    // Automatically display first prev after sort:
-    //autoDisplayFirstItemAfterSorting();   
-    // Repopulate with sorted prevs:
-    popPostPreviewsAll();
-}
