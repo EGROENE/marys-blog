@@ -96,6 +96,9 @@ const allPostPreviews = [
 ]
 let totalPostQuantity = allPostPreviews.length;
 
+// Init array to store items from allPostPrevs that have been displayed on the site:
+let displayedPrevs = [];
+
 // Var to get array of all sections where previews of posts should be displayed:
 //let previewSections = document.getElementsByClassName('post-previews');
 // Function to populate post previews on index.html:
@@ -120,26 +123,41 @@ const popPostPreviews = () => {
     }
 }
 
-// Init array to store items from allPostPrevs that have been displayed on the site:
-let displayedPrevs = [];
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
 const popPostPreviewsAll = () => {
-    for (let i = 0; i < allPostPreviews.length; i++) {
+    // Add first prev:
+    for (let i = 0; i < 1; i++) {
         displayedPrevs.push(allPostPreviews[i]);
-        console.log(displayedPrevs.length);
-        console.log(allPostPreviews[i].dateNum);
+        document.getElementById('post-previews-all').innerHTML += 
+        '<div class="post-preview first-preview>"'
+        + '<a href="' + displayedPrevs[i].linkFromAllPosts + '">'
+        + '<h1>' + displayedPrevs[i].postTitle + '</h1>'
+        + '<div class="author-info-container">'
+        + '<img  src="' + displayedPrevs[i].authorImgFromAllPosts + '"' + 'alt="' + displayedPrevs[i].authorImgAlt + '">'
+        + '<div class="preview-author-date">'
+        + '<h2>'+ displayedPrevs[i].author + '</h2>'
+        + '<header>' + displayedPrevs[i].pubDate + '</header>'
+        + '</div>'
+        + '</div>'
+        + '<p>' + displayedPrevs[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
+        + '</a>'
+        + '</div>'
+    }
+    // Add rest of prevs:
+    for (let i = 1; i < allPostPreviews.length; i++) {
+        displayedPrevs.push(allPostPreviews[i]);
         document.getElementById('post-previews-all').innerHTML +=
         '<div class="post-preview reveal">'
-        + '<a href="' + allPostPreviews[i].linkFromAllPosts + '">'
-        + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
+        + '<a href="' + displayedPrevs[i].linkFromAllPosts + '">'
+        + '<h1>' + displayedPrevs[i].postTitle + '</h1>'
         + '<div class="author-info-container">'
-        + '<img  src="' + allPostPreviews[i].authorImgFromAllPosts + '"' + 'alt="' + allPostPreviews[i].authorImgAlt + '">'
+        + '<img  src="' + displayedPrevs[i].authorImgFromAllPosts + '"' + 'alt="' + displayedPrevs[i].authorImgAlt + '">'
         + '<div class="preview-author-date">'
-        + '<h2>'+ allPostPreviews[i].author + '</h2>'
-        + '<header>' + allPostPreviews[i].pubDate + '</header>'
+        + '<h2>'+ displayedPrevs[i].author + '</h2>'
+        + '<header>' + displayedPrevs[i].pubDate + '</header>'
         + '</div>'
         + '</div>'
-        + '<p>' + allPostPreviews[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
+        + '<p>' + displayedPrevs[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
         + '</a>'
         + '</div>'
     }
@@ -173,13 +191,13 @@ const hideNoncurrentPrevs = () => {
 // Should be called on its corresponding option in sort dropdown menu
 const inAscendingOrder = () => {
     console.log('hi');
-    allPostPreviews.sort((a, b) => {
+    displayedPrevs.sort((a, b) => {
         return a.dateNum - b.dateNum;
     })
     // Hide noncurrent prevs:
     hideNoncurrentPrevs();
     // Automatically display first prev after sort:
-    autoDisplayFirstItemAfterSorting();   
+    //autoDisplayFirstItemAfterSorting();   
     // Repopulate with sorted prevs:
     popPostPreviewsAll();
 }
