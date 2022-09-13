@@ -103,7 +103,6 @@ let displayedPrevs = [];
 // Function should only populate index.html with the first 3 (or so) posts from allPosts:
 const popPostPreviews = () => {
     for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
-            console.log(allPostPreviews[i].dateNum);
             document.getElementById('post-previews-homepage').innerHTML +=
             '<div class="post-preview reveal">'
             + '<a href="' + allPostPreviews[i].linkFromIndex + '">'
