@@ -123,10 +123,15 @@ const popPostPreviews = () => {
 
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
 const ascending = 'ascending';
+const descending = 'descending';
 const popPostPreviewsAll = (order) => {
     if (order === ascending) {
         allPostPreviews.sort((a, b) => {
             return a.dateNum - b.dateNum;
+        })
+    } else if (order === descending) {
+        allPostPreviews.sort((a, b) => {
+            return b.dateNum - a.dateNum;
         })
     }
     for (let i = 0; i < allPostPreviews.length; i++) {
