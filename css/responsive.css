@@ -85,6 +85,13 @@
         right: 10px;
     }
     /* END DEFAULT STYLING */
+    /* START allposts STYLING */
+    #post-previews-homepage div:nth-child(2) {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+    /* END allposts STYLING */
 }
 
 @media screen and (min-width: 1680px) and (max-width: 1919px) {
@@ -122,7 +129,7 @@
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
     /* START DEFAULT STYLING */
     body {
-        width: 99%;
+        width: 92%;
     }
     .theme-panel {
         right: 0px;
@@ -144,7 +151,7 @@
 @media screen and (max-width: 810px) {
     /* START DEFAULT STYLING */
     body {
-        width: 97%;
+        width: 98%;
     }
     #logo-part {
         width: 48%;
@@ -213,7 +220,7 @@
         padding: 6px;
     }
     .theme-panel {
-        right: 0px;
+        right: 32px;
     }
     /* END DEFAULT STYLING */
 }
@@ -224,7 +231,7 @@
         width: 160%;
     }
     .theme-panel {
-        right: 12px;
+        right: 43px;
     }
     .socials-panel {
         display: none;
@@ -232,6 +239,11 @@
     /* END DEFAULT STYLING */
 
     /* START index.html STYLING */
+    #post-previews-all div:nth-child(2) {
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
     .author-info-container {
         width: 24%;
     }
@@ -244,7 +256,7 @@
         width: 167%;
     }
     .theme-panel {
-        right: 5px;
+        right: 45px;
     }
     /* END DEFAULT STYLING */
 }
@@ -258,7 +270,7 @@
         width: 38%;
     }
     .theme-panel {
-        right: 55px;
+        right: 43px;
     }
     /* END DEFAULT STYLING */
 }
@@ -269,7 +281,7 @@
         width: 186%;
     }
     .theme-panel {
-        right: 4px;
-    }
+/*         right: 4px;
+ */    }
     /* END DEFAULT STYLING */
 }
