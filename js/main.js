@@ -122,27 +122,14 @@ const popPostPreviews = () => {
 }
 
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
-const popPostPreviewsAll = () => {
-    // Add first prev:
-    for (let i = 0; i < 1; i++) {
-        displayedPrevs.push(allPostPreviews[i]);
-        document.getElementById('post-previews-all').innerHTML += 
-        '<div class="post-preview first-preview>"'
-        + '<a href="' + displayedPrevs[i].linkFromAllPosts + '">'
-        + '<h1>' + displayedPrevs[i].postTitle + '</h1>'
-        + '<div class="author-info-container">'
-        + '<img  src="' + displayedPrevs[i].authorImgFromAllPosts + '"' + 'alt="' + displayedPrevs[i].authorImgAlt + '">'
-        + '<div class="preview-author-date">'
-        + '<h2>'+ displayedPrevs[i].author + '</h2>'
-        + '<header>' + displayedPrevs[i].pubDate + '</header>'
-        + '</div>'
-        + '</div>'
-        + '<p>' + displayedPrevs[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
-        + '</a>'
-        + '</div>'
+const ascending = 'ascending';
+const popPostPreviewsAll = (order) => {
+    if (order === ascending) {
+        allPostPreviews.sort((a, b) => {
+            return a.dateNum - b.dateNum;
+        })
     }
-    // Add rest of prevs:
-    for (let i = 1; i < allPostPreviews.length; i++) {
+    for (let i = 0; i < allPostPreviews.length; i++) {
         displayedPrevs.push(allPostPreviews[i]);
         document.getElementById('post-previews-all').innerHTML +=
         '<div class="post-preview reveal">'
@@ -160,31 +147,3 @@ const popPostPreviewsAll = () => {
         + '</div>'
     }
 }
-
-// Function to hide noncurrent prevs:
-const postPrevs = document.getElementsByClassName('post-preview');
-const hideNoncurrentPrevs = () => {
-    for (let i = 0; i < postPrevs.length; i++) {
-        postPrevs[i].classList.add("hide-preview")
-    }
-}
-
-// Function to arrange items in allPostPreviews in ascending order by date:
-// Should be called on its corresponding option in sort dropdown menu
-const inAscendingOrder = () => {
-    displayedPrevs.sort((a, b) => {
-        return a.dateNum - b.dateNum;
-    })
-    // Hide noncurrent prevs:
-    hideNoncurrentPrevs();
-    // Repopulate with sorted prevs:
-    popPostPreviewsAll();
-}
-
-// Function to arrange items in allPostPreviews in descending order by date:
-// Should be called on page load of index.html & allposts.html and in sort dropdown menu
-/* const inDescendingOrder = () => {
-    allPostPreviews.dateNum.sort(function (a, b) {
-        return a - b;
-    }) 
-} */
