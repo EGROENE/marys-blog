@@ -1,4 +1,43 @@
-/* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts.html */
+/* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts */
+#sort-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sort-items-container {
+    display: flex;
+    width: 87%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container i {
+    color: gray;
+}
+
+#sort-container #to-ascending-link,
+#sort-container #to-descending-link {
+    color: var(--default-text-color);
+    padding: 1%;
+    background-color: var(--theme-color-primary);
+    border: 0;
+    border-radius: var(--size-12);
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#sort-container a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .hide-preview {
     display: none;
 }
