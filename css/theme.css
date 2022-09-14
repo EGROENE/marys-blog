@@ -271,6 +271,7 @@ button:not(:disabled):not(.disabled) {
     border-bottom: 4px solid var(--theme-color-primary);
 }
 
+/* STYLING OF FOOTER AND ITS ELEMENTS */
 footer {
     text-align: center;
     font-size: var(--size-16);
