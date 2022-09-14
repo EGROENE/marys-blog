@@ -151,3 +151,19 @@ const popPostPreviewsAll = (order) => {
         + '</div>'
     }
 }
+
+// FUNCTIONALITY FOR SEARCH FEATURE ON ALL POSTS PAGES
+const searchBox = document.getElementById('search');
+searchBox.addEventListener('keyup', (event) => {
+    const searchInput = event.target.value.toLowerCase().trim();
+    console.log(searchInput);
+    for (const prev of displayedPrevs) {
+        if (prev.author.includes(searchInput) || prev.postTitle.includes(searchInput) || prev.pubDate.includes(searchInput) || prev.prevText.includes(searchInput)) {
+            console.log(prev);
+            prev.style.display = 'block';
+        } else {
+            console.log(prev);
+            prev.style.display = 'none';
+        }
+    }
+})
