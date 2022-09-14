@@ -65,7 +65,7 @@
     <h1 class="page-header">All Blog Posts</h1>
     <!--END OMNIPRESENT CODE-->
     <div id="sort-container">
-        <button><a href="./all-posts-descending.html">New to Old</a></button>
+        <a id="to-descending-link" href="./all-posts-descending.html">Old to New</a>
     </div>
     <section id="post-previews-all"></section>
     <!--START OMNIPRESENT CODE-->
@@ -77,6 +77,24 @@
          </div>
     </footer>
     <script src="../js/main.js"></script>
+    <!--Add custom JS to display "Old to New" on non-hover & "Sort New to Old" on hover of link to change order-->
+    <script>
+        const toDesc = document.getElementById('to-descending-link');
+        toDesc.addEventListener('mouseover', function displaySortNewToOld() {
+            toDesc.textContent = 'Sort New to Old';
+        })
+        toDesc.addEventListener('mouseout', function displayOldToNew() {
+            toDesc.textContent = 'Old to New';
+        })
+
+        /* const toAsc = document.getElementById('to-ascending-link');
+        toAsc.addEventListener('mouseover', function displaySortOldToNew() {
+            toAsc.textContent = 'Sort Old to New';
+        })
+        toAsc.addEventListener('mouseout', function displayNewToOld() {
+            toAsc.textContent = 'New to Old';
+        }) */
+    </script>
     <!--END OMNIPRESENT CODE-->
 <!--START OMNIPRESENT CODE-->
 </body>
