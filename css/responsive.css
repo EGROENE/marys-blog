@@ -129,7 +129,7 @@
 @media screen and (min-width: 1280px) and (max-width: 1365px) {
     /* START DEFAULT STYLING */
     body {
-        width: 92%;
+        width: 99%;
     }
     .theme-panel {
         right: 0px;
