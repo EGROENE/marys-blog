@@ -65,7 +65,15 @@
     <h1 class="page-header">All Blog Posts</h1>
     <!--END OMNIPRESENT CODE-->
     <div id="sort-container">
-        <a id="to-descending-link" href="./all-posts-descending.html">Old to New</a>
+        <div class="sort-items-container">
+            <a id="to-descending-link" href="./all-posts-descending.html">OLD TO NEW</a>
+            <div class="search-container">
+                <label for="search">
+                    <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search title, author, date, or text">
+                    <i class="fas fa-search"></i>                
+                </label>
+            </div>
+        </div>
     </div>
     <section id="post-previews-all"></section>
     <!--START OMNIPRESENT CODE-->
@@ -81,10 +89,10 @@
     <script>
         const toDesc = document.getElementById('to-descending-link');
         toDesc.addEventListener('mouseover', function displaySortNewToOld() {
-            toDesc.textContent = 'Sort New to Old';
+            toDesc.textContent = 'SORT NEW TO OLD';
         })
         toDesc.addEventListener('mouseout', function displayOldToNew() {
-            toDesc.textContent = 'Old to New';
+            toDesc.textContent = 'OLD TO NEW';
         })
 
         /* const toAsc = document.getElementById('to-ascending-link');
