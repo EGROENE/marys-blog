@@ -153,17 +153,90 @@ const popPostPreviewsAll = (order) => {
 }
 
 // FUNCTIONALITY FOR SEARCH FEATURE ON ALL POSTS PAGES
-const searchBox = document.getElementById('search');
-searchBox.addEventListener('keyup', (event) => {
-    const searchInput = event.target.value.toLowerCase().trim();
-    console.log(searchInput);
-    for (const prev of displayedPrevs) {
-        if (prev.author.includes(searchInput) || prev.postTitle.includes(searchInput) || prev.pubDate.includes(searchInput) || prev.prevText.includes(searchInput)) {
+const searchInput = document.querySelector('.search-input');
+
+searchInput.addEventListener("keyup", (e) => {
+    // Declare & assignt the event's target to a variable, which is whatever is typed into the search bar:
+    let value = e.target.value.trim().toLowerCase();
+
+    // Check if input exists & is greater than 0:
+    if (value && value.trim().length > 0) {
+        console.log(value);
+        // 4. return the results only if the value of the search is included in the person's name
+        // we need to write code (a function for filtering through our data to include the search input value)
+        /* for (prev of displayedPrevs) {
+            if (prev.postTitle.includes(value) || prev.author.includes(value) || prev.prevText.includes(value)) {
+                prev.style.display = 'block';
+            } else {
+                prev.style.display = 'none';
+            }
+        } */
+        console.log(displayedPrevs);
+        /* for (let i = 0; i < displayedPrevs.length; i++) {
+            console.log(displayedPrevs[i]);
+            console.log(displayedPrevs[i].author);
+            console.log(typeof displayedPrevs[i].author);
+            if (typeof displayedPrevs[i] === 'undefined') {
+                console.log('undefined')
+            } else {
+                console.log('defined')
+            }
+            console.log(displayedPrevs[i].pubDate);
+            console.log(displayedPrevs[i].postTitle);
+            console.log(displayedPrevs[i].prevText);
+            if (displayedPrevs[i].author.toLowerCase().trim().includes(value)) {
+                if (typeof displayedPrevs[i] === 'undefined') {
+                    console.log('undefined')
+                } else {
+                    console.log('defined')
+                }
+                console.log('yes');
+                //displayedPrevs[i].style.display = 'block';
+            } else {
+                console.log('no');
+                //displayedPrevs[i].style.display = 'none';
+            }
+        } */
+        for (const prev of displayedPrevs) {
             console.log(prev);
-            prev.style.display = 'block';
-        } else {
-            console.log(prev);
-            prev.style.display = 'none';
+            console.log(prev.author);
+            console.log(typeof prev.author);
+            if (typeof prev === 'undefined') {
+                console.log('undefined')
+            } else {
+                console.log('defined')
+            }
+            /* console.log(prev.pubDate);
+            console.log(prev.postTitle);
+            console.log(prev.prevText); */
+            if (prev.author.toLowerCase().trim().includes(value)) {
+                if (typeof prev === 'undefined') {
+                    console.log('undefined')
+                } else {
+                    console.log('defined')
+                }
+                console.log('yes');
+                prev.style.display = 'block';
+            } else {
+                console.log('no');
+                prev.style.display = 'none';
+            }
         }
+       
+        /* displayedPrevs.forEach((prev) => {
+            console.log(prev);
+            console.log(prev.author);
+            console.log(typeof prev.author);
+            console.log(displayedPrevs[i].pubDate);
+            console.log(displayedPrevs[i].postTitle);
+            console.log(displayedPrevs[i].prevText);
+            if (prev.author.toLowerCase().trim().includes(value)) {
+                console.log('yes');
+                prev.style.display = 'block';
+            } else {
+                console.log('no');
+                prev.style.display = 'none';
+            }
+        }) */
     }
 })
