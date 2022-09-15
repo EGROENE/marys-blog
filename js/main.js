@@ -170,6 +170,7 @@ searchInput.addEventListener("keyup", (e) => {
             if (prev.dataset.author.toLowerCase().trim().includes(value)) { // Next, add for date, prevText, & title
                 console.log('yes');
                 prev.style.display = 'block';
+                prev.style.opacity = '1';
             } else {
                 console.log('no');
                 prev.style.display = 'none';
