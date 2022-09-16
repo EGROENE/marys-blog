@@ -140,5 +140,6 @@
     display: block;
     margin: 4% 0;
     text-align: center;
+    color: var(--default-text-color);
 }
 /* END OF POST PREVIEWS STYLING */
