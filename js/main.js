@@ -176,6 +176,9 @@ searchInput.addEventListener("keyup", (e) => {
             } else {
                 prev.style.display = 'none';
             }
+            if (value === ' ') {
+                prev.style.display = 'block';
+            }
         }
     }
 })
