@@ -129,4 +129,16 @@
     letter-spacing: 1px;
     font-weight: 700;
 }
+
+.results-message {
+    display: none;
+    /* margin: 5% 0;
+    text-align: center; */
+}
+
+.rm-active {
+    display: block;
+    margin: 4% 0;
+    text-align: center;
+}
 /* END OF POST PREVIEWS STYLING */
