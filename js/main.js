@@ -167,7 +167,10 @@ searchInput.addEventListener("keyup", (e) => {
     if (value && value.trim().length > 0) {
         const postPreviews = document.getElementsByClassName('post-preview');
         for (const prev of postPreviews) {
-            if (prev.dataset.author.toLowerCase().trim().includes(value)) { // Next, add for date, prevText, & title
+            if (prev.dataset.author.toLowerCase().trim().includes(value)
+            || prev.dataset.date.toLowerCase().trim().includes(value)
+            || prev.dataset.title.toLowerCase().trim().includes(value)
+            || prev.dataset.text.toLowerCase().trim().includes(value)) {
                 console.log('yes');
                 prev.style.display = 'block';
                 prev.style.opacity = '1';
