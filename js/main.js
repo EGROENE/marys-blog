@@ -171,11 +171,9 @@ searchInput.addEventListener("keyup", (e) => {
             || prev.dataset.date.toLowerCase().trim().includes(value)
             || prev.dataset.title.toLowerCase().trim().includes(value)
             || prev.dataset.text.toLowerCase().trim().includes(value)) {
-                console.log('yes');
                 prev.style.display = 'block';
                 prev.style.opacity = '1';
             } else {
-                console.log('no');
                 prev.style.display = 'none';
             }
         }
