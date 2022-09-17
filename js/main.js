@@ -186,12 +186,13 @@ searchInput.addEventListener("keyup", (e) => {
     // Declare & assignt the event's target to a variable, which is whatever is typed into the search bar:
     let value = e.target.value.trim().toLowerCase();
 
+    const postPreviews = document.getElementsByClassName('post-preview');
+
     let totalResults = 0;
     const resultsMessageLocations = document.getElementsByClassName('results-message');
 
     // Check if input exists & is greater than 0:
     if (value && value.trim().length > 0) {
-        const postPreviews = document.getElementsByClassName('post-preview');
         for (const prev of postPreviews) {
             if (prev.dataset.author.toLowerCase().trim().includes(value)
             || prev.dataset.date.toLowerCase().trim().includes(value)
@@ -223,9 +224,18 @@ searchInput.addEventListener("keyup", (e) => {
         for (let resultsMessage of resultsMessageLocations) {
             resultsMessage.style.display = 'none';
         }
-        const postPreviews = document.getElementsByClassName('post-preview');
         for (const prev of postPreviews) {
             prev.style.display = 'block';
         }
     }
+    const clearSearchIcon = document.getElementById('clear-search-icon');
+    clearSearchIcon.addEventListener("click", function clearSearchBox() {
+        totalResults = 0;
+        for (let resultsMessage of resultsMessageLocations) {
+            resultsMessage.style.display = 'none';
+        }
+        for (const prev of postPreviews) {
+            prev.style.display = 'block';
+        }
+    })
 })
