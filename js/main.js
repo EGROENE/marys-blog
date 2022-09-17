@@ -212,11 +212,12 @@ searchInput.addEventListener("keyup", (e) => {
                 prev.style.display = 'none';
                 for (let resultsMessage of resultsMessageLocations) {
                     resultsMessage.classList.add('rm-active');
-                    resultsMessage.textContent = `Your search yielded ${totalResults} result(s).`;
+                    if (totalResults === 0) {
+                        resultsMessage.textContent = `We couldn't find what you're looking for. Make sure your spelling is correct & try again.`;
+                    }
                 }
             }
         }
-        console.log(value);
     } else {
         totalResults = 0;
         for (let resultsMessage of resultsMessageLocations) {
