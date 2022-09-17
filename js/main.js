@@ -95,9 +95,6 @@ const allPostPreviews = [
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgAlt: 'ethan-groene', pubDate: (new Date('August 3, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 3, 2022').getTime()), postTitle: 'How to Care for a Dog', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
 ]
 
-// Init array to store items from allPostPrevs that have been displayed on the site:
-let displayedPrevs = [];
-
 // Var to get array of all sections where previews of posts should be displayed:
 // Function to populate post previews on index.html:
 // Function should only populate index.html with the first 3 (or so) posts from allPosts:
@@ -119,6 +116,9 @@ const popPostPreviews = () => {
             + '</div>'
     }
 }
+
+// Init array to store items from allPostPrevs that have been displayed on the site:
+let displayedPrevs = [];
 
 // Function to populate post previews on loading of allposts.html (paths to article and images may differ):
 const ascending = 'ascending';
