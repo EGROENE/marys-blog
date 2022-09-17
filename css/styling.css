@@ -132,6 +132,7 @@
 
 .results-message {
     display: none;
+    color: var(--default-text-color);
     /* margin: 5% 0;
     text-align: center; */
 }
@@ -140,6 +141,5 @@
     display: block;
     margin: 4% 0;
     text-align: center;
-    color: var(--default-text-color);
 }
 /* END OF POST PREVIEWS STYLING */
