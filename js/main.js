@@ -133,7 +133,30 @@ const popPostPreviewsAll = (order) => {
             return b.dateNum - a.dateNum;
         })
     }
-    for (let i = 0; i < allPostPreviews.length; i++) {
+    // Automatically display first prev:
+    for (let i = 0; i < 1; i++) {
+        displayedPrevs.push(allPostPreviews[i]);
+        document.getElementById('post-previews-all').innerHTML +=
+        '<div class="post-preview reveal active" data-author="' + displayedPrevs[i].author + '"'
+        + 'data-date="' + displayedPrevs[i].pubDate + '"'
+        + 'data-title="' + displayedPrevs[i].postTitle + '"'
+        + 'data-text="' + displayedPrevs[i].prevText + '"'
+        + '>'
+        + '<a href="' + displayedPrevs[i].linkFromAllPosts + '">'
+        + '<h1>' + displayedPrevs[i].postTitle + '</h1>'
+        + '<div class="author-info-container">'
+        + '<img  src="' + displayedPrevs[i].authorImgFromAllPosts + '"' + 'alt="' + displayedPrevs[i].authorImgAlt + '">'
+        + '<div class="preview-author-date">'
+        + '<h2>'+ displayedPrevs[i].author + '</h2>'
+        + '<header>' + displayedPrevs[i].pubDate + '</header>'
+        + '</div>'
+        + '</div>'
+        + '<p>' + displayedPrevs[i].prevText + '... ' + '<span class="read-more-link">Read More</span>' + '</p>'
+        + '</a>'
+        + '</div>'
+    }
+    // Populate rest of prevs:
+    for (let i = 1; i < allPostPreviews.length; i++) {
         displayedPrevs.push(allPostPreviews[i]);
         document.getElementById('post-previews-all').innerHTML +=
         '<div class="post-preview reveal" data-author="' + displayedPrevs[i].author + '"'
