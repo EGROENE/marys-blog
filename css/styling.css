@@ -13,11 +13,40 @@
 
 .search-container {
     display: flex;
-    flex-direction: column;
+    width: 22%;
 }
 
-.search-container i {
-    color: gray;
+#search-label {
+    display: flex;
+    width: 100%;        
+}
+
+#search-label i {
+    color: var(--default-text-color);
+    background-color: var(--theme-color-primary);
+    padding: 4% 5%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+
+}
+
+#search-label i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#search {
+    border: 2px solid var(--theme-color-primary);
+    padding: 4%;
+    width: 134%;
+    font-weight: 800;
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--size-16);
+}
+
+#search:active {
+    border: 2px solid var(--default-text-color);
 }
 
 #sort-container #to-ascending-link,
