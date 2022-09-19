@@ -171,3 +171,20 @@
     text-align: center;
 }
 /* END OF POST PREVIEWS STYLING */
+
+/* START about.html STYLING */
+.about-page-body-container {
+    background: url(../assets/images/about-page-bg.jpg);
+    background-attachment: fixed;
+    padding: 24px;
+    margin: 2% 11%;
+    font-size: var(--size-32);
+    text-align: center;
+}
+
+.about-page-body-container p {
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: var(--size-16);
+}
+/* END about.html STYLING */
