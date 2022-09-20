@@ -279,15 +279,18 @@ footer {
     margin-top: var(--size-56);
 }
 
-#socials a {
+#socials a,
+.contact-page-socials-container a {
     color: gray;
     font-size: var(--size-40);
     margin-right: var(--size-40);
 }
 
-#socials a:last-child {margin-right: 0;}
+#socials a:last-child,
+.contact-page-socials-container a:last-child {margin-right: 0;}
 
-#socials a:hover {
+#socials a:hover,
+.contact-page-socials-container a:hover {
     cursor: pointer;
     opacity: 0.8;
 }
