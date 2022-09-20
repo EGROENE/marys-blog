@@ -146,6 +146,26 @@
         right: 0px;
     }
     /* END DEFAULT STYLING */
+
+    /* START contact.html STYLING */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-page-social-icons-container {
+        margin: 3% 0 3% 0;
+    }
+
+    .contact-two {
+        margin-top: 6%;
+        width: 50%;
+    }
+
+    form button {
+        width: 104%;
+    }
+    /* END contact.html STYLING */
 }
 
 @media screen and (max-width: 810px) {
@@ -171,6 +191,31 @@
         transition: none;
     }
     /* END index.html STYLING */
+
+    /* START contact.html STYLING */
+    .contact-two {
+        margin-top: 6%;
+        width: 75%;
+    }
+
+    form {
+        margin-top: var(--size-32);
+    }
+
+    form label {
+        font-size: var(--size-32);
+    }
+
+    form div input,
+    form div textarea,
+    form button {
+        font-size: var(--size-24);
+    }
+    
+    form button {
+        width: 103%;
+    }
+    /* END  contact.html STYLING */
 }
 
 @media screen and (max-width: 768px) {
@@ -217,10 +262,10 @@
     }    
     .socials-panel a {
         font-size: 35px;
-        padding: 6px;
+        padding: 10px;
     }
     .theme-panel {
-        right: 32px;
+        /* right: 32px; */
     }
     /* END DEFAULT STYLING */
 }
@@ -232,9 +277,13 @@
     }
     .theme-panel {
         right: 43px;
+        right: 0px;
     }
     .socials-panel {
         display: none;
+    }
+    .page-header {
+        font-size: var(--size-56);
     }
     /* END DEFAULT STYLING */
 
@@ -248,6 +297,18 @@
         width: 24%;
     }
     /* END index.html STYLING */
+
+    /* START contact.html STYLING */
+
+    .contact-container header {
+        font-size: var(--size-48);
+    }
+
+    #socials a, 
+    .contact-page-socials-container a {
+        font-size: var(--size-64);
+    }
+    /* END contact.html STYLING */
 }
 
 @media screen and (max-width: 393px) {
@@ -257,6 +318,7 @@
     }
     .theme-panel {
         right: 45px;
+        right: 0px;
     }
     /* END DEFAULT STYLING */
 }
@@ -271,6 +333,7 @@
     }
     .theme-panel {
         right: 43px;
+        right: 0px;
     }
     /* END DEFAULT STYLING */
 }
@@ -281,7 +344,8 @@
         width: 186%;
     }
     .theme-panel {
-/*         right: 4px;
- */    }
+        right: 4px;
+        right: 0px;
+    }
     /* END DEFAULT STYLING */
 }
