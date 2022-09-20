@@ -218,7 +218,7 @@
     color: var(--default-text-color);
 }
 
-.contact-container header span {
+.contact-container header span a {
     color: var(--theme-color-primary);
 }
 
