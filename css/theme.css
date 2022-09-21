@@ -280,17 +280,20 @@ footer {
 }
 
 #socials a,
-.contact-page-socials-container a {
+.contact-page-socials-container a,
+.author-socials a {
     color: gray;
     font-size: var(--size-40);
     margin-right: var(--size-40);
 }
 
 #socials a:last-child,
-.contact-page-socials-container a:last-child {margin-right: 0;}
+.contact-page-socials-container a:last-child,
+.author-socials a:last-child {margin-right: 0;}
 
 #socials a:hover,
-.contact-page-socials-container a:hover {
+.contact-page-socials-container a:hover,
+.author-socials a:hover {
     cursor: pointer;
     opacity: 0.8;
 }
