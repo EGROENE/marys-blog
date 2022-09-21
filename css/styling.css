@@ -277,6 +277,7 @@ form button:hover {
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row-reverse;
 }
 
 .author-info-full-article-page {
