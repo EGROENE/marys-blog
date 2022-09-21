@@ -297,4 +297,18 @@ form button:hover {
 .author-socials a:hover {
     color: var(--theme-color-primary);
 }
+
+.full-article-body-container {
+    margin: 2% 14%;
+}
+
+.full-article-body-container p {
+    font-size: var(--size-24);
+    color: var(--default-text-color);
+}
+
+.article-first-letter  {
+    font-size: var(--size-48);
+    font-weight: 700;
+}
 /* END FULL-ARTICLE PAGES STYLING */
