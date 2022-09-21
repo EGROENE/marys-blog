@@ -216,6 +216,12 @@
         width: 103%;
     }
     /* END  contact.html STYLING */
+
+    /* START FULL-ARTICLE PAGE STYLING */
+    .author-info-container.full-article-page {
+        justify-content: space-between;
+    }
+    /* END FULL-ARTICLE PAGE STYLING */
 }
 
 @media screen and (max-width: 768px) {
@@ -241,6 +247,15 @@
         transition: none;
     }
     /* END index.html STYLING */
+
+    /* START all-posts STYLING */
+    #to-ascending-link {
+        display: none;
+    }
+    .search-container {
+        width: 57%;
+    }
+    /* END all-posts STYLING */
 }
 
 @media screen and (min-width: 601px) and (max-width: 720px) {
@@ -261,7 +276,7 @@
         width: 57%;
     }    
     .socials-panel a {
-        font-size: 35px;
+        font-size: var(--size-24);
         padding: 10px;
     }
     .theme-panel {
@@ -270,10 +285,22 @@
     /* END DEFAULT STYLING */
 }
 
+@media screen and (max-width: 601px) {
+    /* START DEFAULT STYLING */
+    body {
+        /* width: 106%; */
+    }
+    .socials-panel,
+    .theme-panel {
+        top: 60%;
+    }
+    /* END DEFAULT STYLING */
+}
+
 @media screen and (max-width: 414px) {
     /* START DEFAULT STYLING */
     body {
-        width: 160%;
+        width: 152%;
     }
     .theme-panel {
         right: 43px;
