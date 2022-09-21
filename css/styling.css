@@ -285,4 +285,12 @@ form button:hover {
 .preview-author-date.full-article-page {
     margin-left: 8%;
 }
+
+.author-socials a {
+    color: var(--default-text-color);
+}
+
+.author-socials a:hover {
+    color: var(--theme-color-primary);
+}
 /* END FULL-ARTICLE PAGES STYLING */
