@@ -18,7 +18,7 @@
     <!--LINK TO FONTAWESOME KIT-->
     <script src="https://kit.fontawesome.com/5f2ab24bd1.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="popAuthorInfoOnFullArticlePages(1)"> <!--PARAM CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
     <!--theme-panel div is for toggling of light/dark themes-->
     <div class="socials-panel">
         <a id="socials-panel-fb" href="#" title="Facebook"><i class="fa fa-facebook-f"></i></a>
@@ -64,14 +64,7 @@
     <!--END OMNIPRESENT CODE-->
     <div class="full-article-info full-article-page">
         <h1>Why I Still Live with My Mom As a 39-Year-Old</h1>
-        <div class="author-info-container full-article-page">
-            <div class="author-info-full-article-page">
-                <img src="../../assets/images/brennan-huff.jpg">
-                <div class="preview-author-date full-article-page">
-                    <h2>Brennan Huff</h2>
-                    <header>September 7, 2022</header>
-                </div>
-            </div>
+        <div id="author-info" class="author-info-container full-article-page">
             <!--MAY VARY, SO DON'T POPULATE WITH JS-->
             <div class="author-socials">
                 <a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
@@ -96,6 +89,7 @@
             <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>   
          </div>
     </footer>
+    <script src="../../js/popAuthorInfoOnFullArticlePgs.js"></script>
     <script src="../../js/main.js"></script>
     <!--END OMNIPRESENT CODE-->
 <!--START OMNIPRESENT CODE-->
