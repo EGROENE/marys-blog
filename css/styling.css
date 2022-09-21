@@ -264,10 +264,13 @@ form button:hover {
 /* END contact.html STYLING */
 
 /* START FULL-ARTICLE PAGES STYLING */
+.full-article-info.full-article-page {
+    text-align: center;
+}
+
 .full-article-info h1 {
     color: var(--default-text-color);
     font-size: var(--size-48);
-    text-align: center;
 }
 
 .author-info-container.full-article-page {
@@ -284,6 +287,7 @@ form button:hover {
 
 .preview-author-date.full-article-page {
     margin-left: 8%;
+    text-align: left;
 }
 
 .author-socials a {
