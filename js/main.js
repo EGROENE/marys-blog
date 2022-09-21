@@ -99,6 +99,10 @@ const allPostPreviews = [
 // Function to populate post previews on index.html:
 // Function should only populate index.html with the first 3 (or so) posts from allPosts:
 const popPostPreviewsHomepage = () => {
+    // Since post prevs are added to end of allPostPrevs arr as time goes on, the order needs to be reversed on homepage if you want to display from new to old:
+    allPostPreviews.sort((a, b) => {
+        return b.dateNum - a.dateNum;
+    })
     for (let i = 0; i < allPostPreviews.length - (allPostPreviews.length - 5); i++) {
             document.getElementById('post-previews-homepage').innerHTML +=
             '<div class="post-preview reveal">'
