@@ -262,3 +262,27 @@ form button:hover {
     cursor: pointer;
 }
 /* END contact.html STYLING */
+
+/* START FULL-ARTICLE PAGES STYLING */
+.full-article-info h1 {
+    color: var(--default-text-color);
+    font-size: var(--size-48);
+    text-align: center;
+}
+
+.author-info-container.full-article-page {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.author-info-full-article-page {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.preview-author-date.full-article-page {
+    margin-left: 8%;
+}
+/* END FULL-ARTICLE PAGES STYLING */
