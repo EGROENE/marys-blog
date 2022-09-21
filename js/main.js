@@ -87,12 +87,12 @@ reveal();
 
 // Array containing all article previews in their own objects:
 const allPostPreviews = [
-    { linkFromIndex: './pages/full-articles/why-i-still-live-with-my-mom-as-a-39-year-old.html', linkFromAllPosts: './full-articles/why-i-still-live-with-my-mom-as-a-39-year-old.html', author: 'Brennan Huff', authorImgFromIndex: './assets/images/brennan-huff.jpg', authorImgFromAllPosts: '../assets/images/brennan-huff.jpg', authorImgFromFullArticle: '../../assets/images/brennan-huff.jpg', authorImgAlt: 'brennan-huff', pubDate: (new Date('September 7, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('September 7, 2022').getTime()), postTitle: 'Why I Still Live with My Mom As a 39-Year-Old', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
-    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Charles Barkley', authorImgFromIndex: './assets/images/charles-barkley.jpg', authorImgFromAllPosts: '../assets/images/charles-barkley.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'charles-barkley', pubDate: (new Date('September 5, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('September 5, 2022').getTime()), postTitle: 'How I Survived Playing an NBA Game while Drunk', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
-    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Pakalu Pitito', authorImgFromIndex: './assets/images/pakalu-pitito.jpg', authorImgFromAllPosts: '../assets/images/pakalu-pitito.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'pakalu-pitito', pubDate: (new Date('August 28, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 28, 2022').getTime()), postTitle: 'How to Run a Convenience Store', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
-    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Pat McAfee', authorImgFromIndex: './assets/images/pat-mcafee.jpg', authorImgFromAllPosts: '../assets/images/pat-mcafee.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'pat-mcafee', pubDate: (new Date('August 14, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 14, 2022').getTime()), postTitle: 'How I Beat the Piss aht of ESPN in Ratings Every Single Day', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
+    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'ethan-groene', pubDate: (new Date('August 3, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 3, 2022').getTime()), postTitle: 'How to Care for a Dog', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
     { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Dan Campbell', authorImgFromIndex: './assets/images/dan-campbell.jpg', authorImgFromAllPosts: '../assets/images/dan-campbell.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'kate-hudson', pubDate: (new Date('August 5, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 5, 2022').getTime()), postTitle: 'How I Brought Hope Back to a Historically God-Awful Team & a Miserable City', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
-    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Ethan Groene', authorImgFromIndex: './assets/images/ethan-groene.jpg', authorImgFromAllPosts: '../assets/images/ethan-groene.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'ethan-groene', pubDate: (new Date('August 3, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 3, 2022').getTime()), postTitle: 'How to Care for a Dog', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
+    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Pat McAfee', authorImgFromIndex: './assets/images/pat-mcafee.jpg', authorImgFromAllPosts: '../assets/images/pat-mcafee.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'pat-mcafee', pubDate: (new Date('August 14, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 14, 2022').getTime()), postTitle: 'How I Beat the Piss aht of ESPN in Ratings Every Single Day', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
+    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Pakalu Pitito', authorImgFromIndex: './assets/images/pakalu-pitito.jpg', authorImgFromAllPosts: '../assets/images/pakalu-pitito.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'pakalu-pitito', pubDate: (new Date('August 28, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('August 28, 2022').getTime()), postTitle: 'How to Run a Convenience Store', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
+    { linkFromIndex: '#', linkFromAllPosts: '#', author: 'Charles Barkley', authorImgFromIndex: './assets/images/charles-barkley.jpg', authorImgFromAllPosts: '../assets/images/charles-barkley.jpg', authorImgFromFullArticle: '#', authorImgAlt: 'charles-barkley', pubDate: (new Date('September 5, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('September 5, 2022').getTime()), postTitle: 'How I Survived Playing an NBA Game while Drunk', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' },
+    { linkFromIndex: './pages/full-articles/6-why-i-still-live-with-my-mom-as-a-39-year-old.html', linkFromAllPosts: './full-articles/6-why-i-still-live-with-my-mom-as-a-39-year-old.html', author: 'Brennan Huff', authorImgFromIndex: './assets/images/brennan-huff.jpg', authorImgFromAllPosts: '../assets/images/brennan-huff.jpg', authorImgFromFullArticle: '../../assets/images/brennan-huff.jpg', authorImgAlt: 'brennan-huff', pubDate: (new Date('September 7, 2022').toLocaleString("en-US", {day: "numeric", month: "long", year: "numeric"})), dateNum: (new Date('September 7, 2022').getTime()), postTitle: 'Why I Still Live with My Mom As a 39-Year-Old', prevText: 'Ich höre schon des Dorfs Getümmel, Hier ist des Volkes wahrer Himmel, Zufrieden jauchzet groß und klein, Hier bin ich nicht; doch viel ist mir bewusst. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Wenn sich der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Ich bin Ein Teil von jener Kraft, Die stets das Gute schafft. Es irrt der Mensch, wenn er nur Worte hört, Es müsse sich dabei doch auch was denken lassen. Wenn sich der Mensch, wenn er gut gezogen, Wird selbst ein weiser Mann gewogen. So schreitet in dem engen Bretterhaus (Theater, Bühne).' }
 ]
 
 // Var to get array of all sections where previews of posts should be displayed:
@@ -178,90 +178,3 @@ const popPostPreviewsAll = (order) => {
         + '</div>'
     }
 }
-
-/* // FUNCTIONALITY FOR SEARCH FEATURE ON ALL POSTS PAGES
-const searchInput = document.querySelector('.search-input');
-
-searchInput.addEventListener("keyup", (e) => {
-    // Declare & assignt the event's target to a variable, which is whatever is typed into the search bar:
-    let value = e.target.value.trim().toLowerCase();
-
-    const postPreviews = document.getElementsByClassName('post-preview');
-
-    let totalResults = 0;
-    const resultsMessageLocations = document.getElementsByClassName('results-message');
-
-    // Check if input exists & is greater than 0:
-    if (value && value.trim().length > 0) {
-        for (const prev of postPreviews) {
-            if (prev.dataset.author.toLowerCase().trim().includes(value)
-            || prev.dataset.date.toLowerCase().trim().includes(value)
-            || prev.dataset.title.toLowerCase().trim().includes(value)
-            || prev.dataset.text.toLowerCase().trim().includes(value)) {
-                prev.style.display = 'block';
-                prev.style.opacity = '1';
-                totalResults += 1;
-                for (let resultsMessage of resultsMessageLocations) {
-                    resultsMessage.style.display = 'block';
-                    resultsMessage.textContent = `Your search yielded ${totalResults} result(s).`;
-                    resultsMessage.style.margin = '4% 0';
-                    resultsMessage.style.textAlign = 'center';
-                    resultsMessage.style.color = 'var(default-text-color)';
-                }
-            } else {
-                totalResults += 0;
-                prev.style.display = 'none';
-                for (let resultsMessage of resultsMessageLocations) {
-                    resultsMessage.classList.add('rm-active');
-                    if (totalResults === 0) {
-                        resultsMessage.textContent = `We couldn't find what you're looking for. Make sure your spelling is correct & try again.`;
-                    }
-                }
-            }
-        }
-    } else {
-        totalResults = 0;
-        for (let resultsMessage of resultsMessageLocations) {
-            resultsMessage.style.display = 'none';
-        }
-        for (const prev of postPreviews) {
-            prev.style.display = 'block';
-        }
-    }
-    const clearSearchIcon = document.getElementById('clear-search-icon');
-    clearSearchIcon.addEventListener("click", function clearSearchBox() {
-        totalResults = 0;
-        for (let resultsMessage of resultsMessageLocations) {
-            resultsMessage.style.display = 'none';
-        }
-        for (const prev of postPreviews) {
-            prev.style.display = 'block';
-        }
-    })
-}) */
-
-// Function to populate article & author info on full-article pages
-// Should be called upon loading of the full-article page
-/* const authorInfoArea = document.getElementById("author-info");
-const popAuthorInfoOnFullArticlePages = (articleNumber) => {
-    for (let i = 0; i < 1; i++) {
-        authorInfoArea.innerHTML += "<div class='author-info-full-article-page'>"
-        + "<img src'" + allPostPreviews[articleNumber - 1].authorImgFromFullArticle + "'>"
-        + "<div class='preview-author-date full-article-page'>"
-        + "<h2>" + allPostPreviews[articleNumber - 1].author + "</h2>"
-        + "<header>" + allPostPreviews[articleNumber - 1].pubDate + "</header>"
-        + "</div>"
-        + "</div>"
-    }
-    for (let articleInfoSect of articleInfoSects) {
-        articleInfoSect.innerHTML += "<h1>" + allPostPreviews.postTitle + "</h1>"
-        + "<div class='author-info-container full-article-page'>"
-        + "<div class='author-info-full-article-page'>"
-        + "<img src='" + allPostPreviews.authorImgFromFullArticle + "'>"
-        "<div class='preview-author-date full-article-page'>"
-        + "<h2>" + allPostPreviews.author + "</h2>"
-        + "<header>" + allPostPreviews.pubDate + "</header>"
-        + "</div>"
-        + "</div>"
-        + "</div>"
-} */
