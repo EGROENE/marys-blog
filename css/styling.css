@@ -312,4 +312,18 @@ form button:hover {
     font-size: var(--size-48);
     font-weight: 700;
 }
+
+.share-this-btns {
+    border-top: 2px dashed gray;
+    border-bottom: 2px dashed gray;
+    padding-bottom: 1%;
+    margin: 0 10% 0 10%;
+}
+
+.share-this-btns header {
+    font-size: var(--size-32);
+    color: var(--default-text-color);
+    text-align: center;
+    margin-bottom: 2%;
+}
 /* END FULL-ARTICLE PAGES STYLING */
