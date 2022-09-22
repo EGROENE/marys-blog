@@ -75,6 +75,10 @@ a {
     background-color: #1da1f2;
 }
 
+#socials-panel-li {
+    background-color: #0072b1;
+}
+
 #socials-panel-ig {
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
