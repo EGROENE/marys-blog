@@ -182,3 +182,13 @@ const popPostPreviewsAll = (order) => {
         + '</div>'
     }
 }
+
+// Function to populate footer social links:
+const footer = document.querySelector('footer');
+const popFooterSocials = () => {
+    footer.innerHTML += "<div id='socials'>"
+    + "<a href='#' title='Facebook'><i class='fab fa-facebook-square'></i></a>"
+    + "<a href='#' title='Twitter'><i class='fa fa-twitter'></i></a>"
+    + "<a href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
+    + "</div>"
+}
