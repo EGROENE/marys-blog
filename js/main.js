@@ -66,6 +66,18 @@ for (const elem of switcher) {
 }
 // END JS FOR TOGGLING OF THEME
 
+// START FUNC TO POPULATE (ALMOST) UNIVERSAL SOCIALS PANEL
+const socialsPanels = document.getElementsByClassName('socials-panel');
+const popSocialsPanel = () => {
+    for (let socialsPanel of socialsPanels) {
+        socialsPanel.innerHTML += "<a id='socials-panel-fb' href='#' title='Facebook'><i class='fa fa-facebook-f'></i></a>"
+        + "<a id='socials-panel-tw' href='#' title='Twitter'><i class='fa fa-twitter'></i></a>"
+        + "<a id='socials-panel-li' href='#' title='LinkedIn'><i class='fab fa-linkedin-in'></i></a>"
+        + "<a id='socials-panel-ig' href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
+    }
+}
+// END FUNC TO POPULATE (ALMOST) UNIVERSAL SOCIALS PANEL
+
 // START JS FOR ANIMATING POST PREVIEWS ON SCROLL
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
