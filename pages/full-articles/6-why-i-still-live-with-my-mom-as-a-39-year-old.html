@@ -21,13 +21,9 @@
     <!--LINK TO SHARETHIS BTNS RESOURCE-->
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=632bd319a700c90019f6dc7f&product=inline-share-buttons" async="async"></script>
 </head>
-<body onload="popAuthorInfoOnFullArticlePages(6);popFooterSocials()"> <!--PARAM CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
+<body onload="popAuthorInfoOnFullArticlePages(6);popSocialsPanel();popFooterSocials()"> <!--PARAM OF popAuthorInfoOnFullArticlePages() CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
     <!--theme-panel div is for toggling of light/dark themes-->
-    <div class="socials-panel">
-        <a id="socials-panel-fb" href="#" title="Facebook"><i class="fa fa-facebook-f"></i></a>
-        <a id="socials-panel-tw" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a id="socials-panel-ig" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
+    <div class="socials-panel"></div>
     <div class="theme-panel">
         <div class="theme-panel-body">
             <span>Change Theme</span>
