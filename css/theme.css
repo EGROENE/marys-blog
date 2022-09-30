@@ -102,6 +102,13 @@ a {
     transform: translateX(100%); /* This hides the panel. Panel doesn't include the arrow to show/hide it */
 }
 
+.theme-button {
+    position: fixed;
+    right: 0;
+    top: 10%;
+    z-index: 100;
+}
+
 /* Adding .open (done with JS) will show the panel */
 .theme-panel.open {
     transform: translateX(0);
