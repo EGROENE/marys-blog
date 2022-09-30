@@ -46,14 +46,14 @@ if (currentTheme) {
 }
 
 // On click of icon in theme tab, open class will be added/removed from theme panel. In other words, this makes the toggle options display or not display.
-toggleTheme.addEventListener('click', function() {
+/* toggleTheme.addEventListener('click', function() {
     const tab = this.parentElement.parentElement; // first parentElement is theme-panel-body, second is theme-panel 
     if (!tab.className.includes(open)) {
         tab.classList.add(open);
     } else {
         tab.classList.remove(open);
     }
-})
+}) */
 
 // For each element with switcher-btn as a class, the particular toggle button is set to active class and theme is set to either light or dark, which are the two datasets ([data-toggle="light"] & [data-toggle="dark"] available)
 for (const elem of switcher) {
