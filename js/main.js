@@ -39,9 +39,9 @@ if (currentTheme) {
     })
     // If the dark theme is set, PAGE LOADS with the active class added to its class list. Active styles the button that corresponds to active theme.
     if (currentTheme === dark) {
-        switcher[1].classList.add(active); // If dark class is set, active class is the second switcher btn (from querySelector array)
+        switcher[0].classList.add(active); // If dark class is set, active class is the second switcher btn (from querySelector array)
     } else {
-        switcher[0].classList.add(active); // If light class is set, active class is the second switcher btn (from querySelector array)
+        switcher[1].classList.add(active); // If light class is set, active class is the second switcher btn (from querySelector array)
     }
 }
 
