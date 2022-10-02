@@ -93,17 +93,18 @@ a {
 }
 
 .theme-button-container {
-    /* position: static; */
+    position: static;
     /* right: 0; */
     /* top: 10%; */
     /* z-index: 100; */
-    display: inline-flex;
-    justify-content: flex-end;
-    margin-left: 91%;
+    display: flex;
+    /* justify-content: flex-end; */
+    /* margin-left: 91%; */
+    justify-content: flex-start;
 }
 
 .theme-button-container button:first-child {
-    margin-right: 13%;
+    margin-right: 3%;
 }
 
 /* Style active/inactive toggle btns */
