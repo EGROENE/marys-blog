@@ -201,6 +201,7 @@ const popFooterSocials = () => {
     footer.innerHTML += "<div id='socials'>"
     + "<a href='#' title='Facebook'><i class='fab fa-facebook-square'></i></a>"
     + "<a href='#' title='Twitter'><i class='fa fa-twitter'></i></a>"
+    + "<a href='#' title='LinkedIn'><i class='fab fa-linkedin-in'></i></a>"
     + "<a href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
     + "</div>"
 }
