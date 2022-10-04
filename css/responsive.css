@@ -29,6 +29,16 @@
         right: 0;
     }
     /* END DEFAULT STYLING */
+
+    /* START CONTACT STYLING */
+    form div input, form div textarea {
+        width: 96%;
+    }
+
+    form button {
+        width: 99%;
+    }
+    /* END CONTACT STYLING */
 }
 
 @media screen and (max-width: 810px) {
@@ -61,6 +71,17 @@
         transition: none;
     }
     /* END ALLPOSTS STYLING */
+
+    /* START CONTACT STYLING */
+    .contact-one {
+        margin-bottom: var(--size-32);
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* END CONTACT STYLING */
 }
 
 @media screen and (max-width: 800px) {
@@ -118,6 +139,16 @@
         transition: none;
     }
     /* END index.html STYLING */
+
+    /* START CONTACT STYLING */
+    .page-header {
+        margin: 7% 0;
+    }
+
+    form {
+        row-gap: var(--size-48);
+    }
+    /* END CONTACT STYLING */
 }
 
 @media screen and (max-width: 412px) {
