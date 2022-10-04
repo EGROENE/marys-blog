@@ -99,8 +99,6 @@ a {
     z-index: 100;
     display: inline-flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
-    /* margin-left: 91%; */
     justify-content: end;
 }
 
