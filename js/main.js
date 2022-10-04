@@ -39,21 +39,21 @@ if (currentTheme) {
     })
     // If the dark theme is set, PAGE LOADS with the active class added to its class list. Active styles the button that corresponds to active theme.
     if (currentTheme === dark) {
-        switcher[1].classList.add(active); // If dark class is set, active class is the second switcher btn (from querySelector array)
+        switcher[0].classList.add(active); // If dark class is set, active class is the second switcher btn (from querySelector array)
     } else {
-        switcher[0].classList.add(active); // If light class is set, active class is the second switcher btn (from querySelector array)
+        switcher[1].classList.add(active); // If light class is set, active class is the second switcher btn (from querySelector array)
     }
 }
 
 // On click of icon in theme tab, open class will be added/removed from theme panel. In other words, this makes the toggle options display or not display.
-toggleTheme.addEventListener('click', function() {
+/* toggleTheme.addEventListener('click', function() {
     const tab = this.parentElement.parentElement; // first parentElement is theme-panel-body, second is theme-panel 
     if (!tab.className.includes(open)) {
         tab.classList.add(open);
     } else {
         tab.classList.remove(open);
     }
-})
+}) */
 
 // For each element with switcher-btn as a class, the particular toggle button is set to active class and theme is set to either light or dark, which are the two datasets ([data-toggle="light"] & [data-toggle="dark"] available)
 for (const elem of switcher) {

@@ -92,102 +92,54 @@ a {
     --default-text-color-reverse: black;
 }
 
-/* This is the panel where user can toggle themes */
-.theme-panel {
+.theme-button-container {
     position: fixed;
-    right: 0;
-    top: 50%;
+    right: 1%;
+    top: 35%;
     z-index: 100;
-    transition: 0.4s;
-    transform: translateX(100%); /* This hides the panel. Panel doesn't include the arrow to show/hide it */
-}
-
-/* Adding .open (done with JS) will show the panel */
-.theme-panel.open {
-    transform: translateX(0);
-}
-
-/* This styles the body of the theme panel, which contains the heading & toggle buttons */
-.theme-panel-body {
-    background-color: var(--theme-color-primary);
-    border: transparent;
-    max-width: 185px;
-    padding: 15px 13px;
-    text-align: center;
-    border-bottom-left-radius: 25px;
-    position: relative;
-}
-
-/* Styles the heading in the theme panel */
-.theme-panel-body > span {
-    color: var(--default-text-color-reverse);
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 26px;
-    padding-bottom: 8px;
     display: inline-flex;
-    font-family: Dosis, sans-serif;
-    text-transform: uppercase;
-    font-size: var(--size-20);
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* margin-left: 91%; */
+    justify-content: end;
 }
 
-/* Styles the container of the buttons in the theme-panel */
-.theme-panel-body .btn-group {
-    /* box-shadow: 12px 34px rgba(22, 28, 45, 0.7); */
-    border-radius: 33px;
-    background-color: white;
-    overflow: hidden;
+.theme-button-container button:first-child {
+    margin-right: 0;
+}
+
+/* Style active/inactive toggle btns */
+.theme-button-container .switcher-btn {
+    border: 2px solid var(--default-text-color);
+    background-color: gray;
+    border:none;
     display: flex;
-    max-width: 153px;
 }
 
-/* Styles the toggle button that is not selected */
-.theme-panel-body .btn-group .switcher-btn {
-    background: transparent;
-    border: none;
-    width: 50%;
-    font-size: 11px;
-    font-weight: 700;
-    height: 42px;
-    padding-left: 15px;
-    padding: 15px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
+.theme-button-container .switcher-btn:hover {
+    cursor: pointer;
 }
 
-/* Styles toggle button that is active */
-.theme-panel-body .btn-group .switcher-btn.active {
-    background-color: #ced4e7;
+.theme-button-container .switcher-btn i {
+    color: white;
+    font-size: var(--size-24);
+    padding: var(--size-12);
 }
 
-/* Styles the tab to show/hide the theme panel */
-.theme-panel-body .theme-tab {
-    position: absolute;
-    top: 0;
-    transform: translateX(-100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 50px;
-    border: 0;
-    background: var(--theme-color-primary);
-    color: var(--default-text-color);
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    left: 1px;
+.theme-button-container .switcher-btn.active {
+    /* background-color: #ced4e7; */
+    opacity: 0.8;
 }
 
-/* Styles the icon in the theme tab */
-.theme-tab i {
-    font-size: 1rem;
-    transition: 0.4s;
-    pointer-events: none;
+.theme-button-container .switcher-btn.active:hover {
+    /* background-color: #ced4e7; */
+    opacity: 0.8;
+    cursor:default
 }
 
-/* Inverts the icon when the theme panel is open */
-.theme-panel.open .theme-tab i {
-    transform: scaleX(-1);
+.theme-button-container .switcher-btn.active i {
+    /* background-color: #ced4e7; */
+    color: rgb(165, 165, 165);
 }
 
 /* Styles all .btn & button that don't have pseudoclass :disabled or .disabled class */

@@ -22,17 +22,9 @@
     <!--socials panel on left side (don't display on sizes smaller than tablet)-->
     <div class="socials-panel"></div>
     <!--theme-panel div is for toggling of light/dark themes-->
-    <div class="theme-panel">
-        <div class="theme-panel-body">
-            <span>Change Theme</span>
-            <div class="btn-group">
-                <button data-toggle="light" class="switcher-btn active">Light</button>
-                <button data-toggle="dark" class="switcher-btn">Dark</button>
-            </div>
-            <button class="theme-tab">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-        </div>
+    <div class="theme-button-container">
+        <button title="Dark Mode" data-toggle="dark" class="switcher-btn"><i id="to-dark-btn" class="fas fa-moon"></i></button>
+        <button title="Light Mode" data-toggle="light" class="switcher-btn"><i id="to-light-btn" class="fas fa-sun"></i></button>
     </div>
     <section id="global-header">
         <div id="global-header-logo-and-headings">
@@ -62,7 +54,7 @@
     <!--END OMNIPRESENT CODE-->
     <div id="sort-container">
         <div class="sort-items-container">
-            <a id="to-ascending-link" href="./all-posts-ascending.html">NEW TO OLD</a>
+            <a id="to-ascending-link" href="./all-posts-ascending.html">SORT OLD TO NEW</a>
             <div class="search-container">
                 <label for="search" id="search-label">
                     <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search title, author, date, or text">
@@ -78,25 +70,6 @@
     <footer></footer>
     <script src="../js/main.js"></script>
     <script src="../js/searchFunctionality.js"></script>
-    <!--Add custom JS to display "New to Old" on non-hover & "Sort Old to New" on hover of link to change order-->
-    <script>
-        const toAsc = document.getElementById('to-ascending-link');
-        toAsc.addEventListener('mouseover', function displaySortOldToNew() {
-            toAsc.textContent = 'SORT OLD TO NEW';
-        })
-        toAsc.addEventListener('mouseout', function displayNewToOld() {
-            toAsc.textContent = 'NEW TO OLD';
-        })
-
-        // Keep below commented-out code, just in case the sky falls:
-        /* const toDesc = document.getElementById('to-descending-link');
-        toDesc.addEventListener('mouseover', function displaySortNewToOld() {
-            toDesc.textContent = 'Sort New to Old';
-        })
-        toDesc.addEventListener('mouseout', function displayOldToNew() {
-            toDesc.textContent = 'Old to New';
-        }) */
-    </script>
     <!--END OMNIPRESENT CODE-->
 <!--START OMNIPRESENT CODE-->
 </body>
