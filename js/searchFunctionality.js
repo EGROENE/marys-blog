@@ -2,7 +2,7 @@
 const searchInput = document.querySelector('.search-input');
 
 searchInput.addEventListener("keyup", (e) => {
-    // Declare & assignt the event's target to a variable, which is whatever is typed into the search bar:
+    // Declare & assign the event's target to a variable, which is whatever is typed into the search bar:
     let value = e.target.value.trim().toLowerCase();
 
     const postPreviews = document.getElementsByClassName('post-preview');
