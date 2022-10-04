@@ -64,6 +64,15 @@ for (const elem of switcher) {
         setTheme(toggle); // sets theme to the option the user selects
     })
 }
+
+// Func to populate theme button container:
+/* const themeBtnContainers = document.getElementsByClassName('theme-button-container');
+const popThemeBtnContainer = () => {
+    for (let container of themeBtnContainers) {
+        container.innerHTML += '<button title="Dark Mode" data-toggle="dark" class="switcher-btn"><i id="to-dark-btn" class="fas fa-moon"></i></button>'
+        + "<button title='Light Mode' data-toggle='light' class='switcher-btn'><i id='to-light-btn' class='fas fa-sun'></i></button>"
+    }
+} */
 // END JS FOR TOGGLING OF THEME
 
 // START FUNC TO POPULATE (ALMOST) UNIVERSAL SOCIALS PANEL
