@@ -54,7 +54,7 @@
     <!--END OMNIPRESENT CODE-->
     <div id="sort-container">
         <div class="sort-items-container">
-            <a id="to-descending-link" href="./all-posts-descending.html">OLD TO NEW</a>
+            <a id="to-descending-link" href="./all-posts-descending.html">SORT NEW TO OLD</a>
             <div class="search-container">
                 <label for="search" id="search-label">
                     <input autocomplete="off" id="search" type="text" class="search-input" placeholder="Search title, author, date, or text">
@@ -70,25 +70,6 @@
     <footer></footer>
     <script src="../js/main.js"></script>
     <script src="../js/searchFunctionality.js"></script>
-    <!--Add custom JS to display "Old to New" on non-hover & "Sort New to Old" on hover of link to change order-->
-    <script>
-        const toDesc = document.getElementById('to-descending-link');
-        toDesc.addEventListener('mouseover', function displaySortNewToOld() {
-            toDesc.textContent = 'SORT NEW TO OLD';
-        })
-        toDesc.addEventListener('mouseout', function displayOldToNew() {
-            toDesc.textContent = 'OLD TO NEW';
-        })
-
-        // Keep below commented-out code, just in case the sky falls:
-        /* const toAsc = document.getElementById('to-ascending-link');
-        toAsc.addEventListener('mouseover', function displaySortOldToNew() {
-            toAsc.textContent = 'Sort Old to New';
-        })
-        toAsc.addEventListener('mouseout', function displayNewToOld() {
-            toAsc.textContent = 'New to Old';
-        }) */
-    </script>
     <!--END OMNIPRESENT CODE-->
 <!--START OMNIPRESENT CODE-->
 </body>
