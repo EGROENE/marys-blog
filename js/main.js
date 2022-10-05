@@ -232,3 +232,11 @@ const popGlobalHeaderOnFAPages = () => {
     + "</ul>"
     + "</nav>"
 }
+
+// Functionality to pop article title on full-article pages:
+const articleTitleOnFAPage = document.getElementById('article-title-fa-pg');
+const articleTitleOnFAPages = (articleNumber) => {
+    for (let i = 0; i < 1; i++) {
+        articleTitleOnFAPage.textContent += allPostPreviews[articleNumber - 1].postTitle
+    } 
+}
