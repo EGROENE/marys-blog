@@ -240,3 +240,13 @@ const articleTitleOnFAPages = (articleNumber) => {
         articleTitleOnFAPage.textContent += allPostPreviews[articleNumber - 1].postTitle
     } 
 }
+
+// Functionality to populate share-this-btns div at bottom of every article on full-article pages:
+const shareBtnsAreas = document.getElementsByClassName('share-this-btns');
+const popShareThisBtnsArea = () => {
+    for (let shareBtnsArea of shareBtnsAreas) {
+        shareBtnsArea.innerHTML += "<header>Share this article!</header>"
+        + "<div class='sharethis-inline-share-buttons'></div>"
+    }
+}
+popShareThisBtnsArea();
