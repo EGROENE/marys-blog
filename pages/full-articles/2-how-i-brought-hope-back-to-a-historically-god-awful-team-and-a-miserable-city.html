@@ -21,7 +21,8 @@
     <!--LINK TO SHARETHIS BTNS RESOURCE-->
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=632bd319a700c90019f6dc7f&product=inline-share-buttons" async="async"></script>
 </head>
-<body onload="popGlobalHeaderOnFAPages();popAuthorInfoOnFullArticlePages(2);popSocialsPanel();popFooterSocials()"> <!--PARAM OF popAuthorInfoOnFullArticlePages() CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
+<body onload="popGlobalHeaderOnFAPages();articleTitleOnFAPages(2);popAuthorInfoOnFullArticlePages(2);popSocialsPanel();popFooterSocials()"> <!--PARAM OF articleTitleOnFAPages() & popAuthorInfoOnFullArticlePages() CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
+    <div id="full-article-page-container">
     <div id="full-article-page-container">
         <div class="socials-panel"></div>
     <div id="theme-button-container-container">
@@ -30,7 +31,7 @@
     <section id="global-header"></section>
     <!--END OMNIPRESENT CODE-->
     <div class="full-article-info full-article-page">
-        <h1>How I Brought Hope Back to a Historically God-Awful Team & a Miserable City</h1>
+        <h1 id="article-title-fa-pg"></h1>
         <div id="author-info" class="author-info-container full-article-page">
             <!--MAY VARY, SO DON'T POPULATE WITH JS-->
             <div class="author-socials">
