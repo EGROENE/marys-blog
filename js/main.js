@@ -205,3 +205,30 @@ const popFooterSocials = () => {
     + "<a href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
     + "</div>"
 }
+
+// Functionality to populate global header of full-articles pages:
+const globalHeader = document.getElementById('global-header');
+const popGlobalHeaderOnFAPages = () => {
+    globalHeader.innerHTML += "<div id='global-header-logo-and-headings'>"
+    + "<a href='../../index.html' id='logo-part'>"
+    + "<img src='../../assets/images/flower-logo.png' alt='header-flower-logo'>"
+    + "<div id='logo-headers'>"
+    + "<header>Mary's Blog</header>"
+    + "<header>a place of healing</header>"
+    + "</div>"
+    + "</a>"
+    + "</div>"
+    + "<nav id='global-header-nav'>"
+    + "<ul>"
+    + "<li>"
+    + "<a href='../all-posts-descending.html'>All Posts</a>"
+    + "</li>"
+    + "<li>"
+    + "<a href='../about.html'>About</a>"
+    + "</li>"
+    + "<li>"
+    + "<a href='../contact.html'>Contact</a>"
+    + "</li>"
+    + "</ul>"
+    + "</nav>"
+}
