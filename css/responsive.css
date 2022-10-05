@@ -90,10 +90,10 @@
     /* END ALLPOSTS STYLING */
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 768px) {
     /* START DEFAULT STYLING */
-    .socials-panel {
-        display: none;
+    .theme-button-container {
+        right: 0;
     }
 
     .theme-button-container {
@@ -106,11 +106,33 @@
     .theme-button-container button:first-child {
         margin-bottom: 0;
     }
+    /* END DEFAULT STYLING */
+}
+
+@media screen and (max-width: 601px) {
+    /* START DEFAULT STYLING */
+    .socials-panel {
+        display: none;
+    }
 
     .theme-button-container .switcher-btn i {
         padding:var(--size-8);
     }
     /* END DEFAULT STYLING */
+
+    /* START FULL ARTICLE STYLING */
+    #full-article-page-container {
+        width: 108%;
+    }
+
+    #author-info {
+        justify-content: space-between;
+    }
+
+    .full-article-body-container {
+        margin: 2% 3%;
+    }
+    /* END FULL ARTICLE STYLING */
 }
 
 @media screen and (max-width: 414px) {
@@ -125,6 +147,10 @@
 
     .theme-button-container button:first-child {
         margin-right: 17%;
+    }
+
+    .theme-button-container .switcher-btn i {
+        font-size: var(--size-36);
     }
 
     #global-header-nav {
@@ -149,6 +175,12 @@
         row-gap: var(--size-48);
     }
     /* END CONTACT STYLING */
+
+    /* START FULL ARTICLE STYLING */
+    #full-article-page-container {
+        width: 95%;
+    }
+    /* END FULL ARTICLE STYLING */
 }
 
 @media screen and (max-width: 412px) {
