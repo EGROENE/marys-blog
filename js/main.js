@@ -76,6 +76,7 @@ const popSocialsPanel = () => {
         + "<a id='socials-panel-ig' href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
     }
 }
+popSocialsPanel();
 // END FUNC TO POPULATE (ALMOST) UNIVERSAL SOCIALS PANEL
 
 // START JS FOR ANIMATING POST PREVIEWS ON SCROLL
@@ -205,6 +206,7 @@ const popFooterSocials = () => {
     + "<a href='#' title='Instagram'><i class='fab fa-instagram'></i></a>"
     + "</div>"
 }
+popFooterSocials();
 
 // Functionality to populate global header of full-articles pages:
 const globalHeader = document.getElementById('global-header');
