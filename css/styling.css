@@ -271,6 +271,7 @@ form button:hover {
 .full-article-info h1 {
     color: var(--default-text-color);
     font-size: var(--size-48);
+    margin: 0 11%;
 }
 
 .author-info-container.full-article-page {
