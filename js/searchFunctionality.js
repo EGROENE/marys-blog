@@ -16,6 +16,7 @@ searchInput.addEventListener("keyup", (e) => {
             if (prev.dataset.author.toLowerCase().trim().includes(value)
             || prev.dataset.date.toLowerCase().trim().includes(value)
             || prev.dataset.title.toLowerCase().trim().includes(value)
+            || prev.dataset.topic.toLowerCase().trim().includes(value)
             || prev.dataset.text.toLowerCase().trim().includes(value)) {
                 prev.style.display = 'block';
                 prev.style.opacity = '1';
