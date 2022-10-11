@@ -83,8 +83,7 @@
     opacity: 1;
 }
 
-#post-previews-homepage,
-#post-previews-all {
+#post-previews-container {
     margin: 0 6%;
 }
 
@@ -100,8 +99,8 @@
 }
 
 /* First item on pages with post previews should appear with no transition */
-#post-previews-homepage div:first-child
-/* #post-previews-all div:first-child */ {
+#post-previews-container div:first-child
+/* #post-previews-container div:first-child */ {
     transform: none;
     opacity: 1;
     transition: none;
@@ -285,6 +284,14 @@ form button:hover {
     display: flex;
     align-items: center;
     width: 10%;
+}
+
+.prev-topic-link {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: var(--main-font);
+    color: var(--theme-color-primary);
+    font-weight: 700;
 }
 
 .preview-author-date.full-article-page {
