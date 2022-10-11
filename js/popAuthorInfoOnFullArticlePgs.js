@@ -4,7 +4,7 @@ const authorInfoArea = document.getElementById("author-info");
 const popAuthorInfoOnFullArticlePages = (articleNumber) => {
     for (let i = 0; i < 1; i++) {
         authorInfoArea.innerHTML += "<div class='author-info-full-article-page'>"
-        + "<img src='" + allPostPreviews[articleNumber - 1].authorImgFromFullArticle + "'>"
+        + "<img src='" + allPostPreviews[articleNumber - 1].authorImgFromFullArticleAndTopicPages + "'>"
         + "<div class='preview-author-date full-article-page'>"
         + "<h2>" + allPostPreviews[articleNumber - 1].author + "</h2>"
         + "<header>" + allPostPreviews[articleNumber - 1].pubDate + "</header>"
