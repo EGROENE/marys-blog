@@ -304,11 +304,11 @@ form button:hover {
 }
 
 .prev-topic-link {
-    text-transform: uppercase;
-    text-decoration: underline;
+    text-transform: lowercase;
     font-family: var(--main-font);
     color: var(--theme-color-primary);
     font-weight: 700;
+    letter-spacing: 3px;
 }
 
 .preview-author-date.full-article-page {
