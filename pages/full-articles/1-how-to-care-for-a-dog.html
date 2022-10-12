@@ -21,8 +21,7 @@
     <!--LINK TO SHARETHIS BTNS RESOURCE-->
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=632bd319a700c90019f6dc7f&product=inline-share-buttons" async="async"></script>
 </head>
-<body onload="popGlobalHeaderOnFAAndTopicPages();articleTitleOnFAPages(1);popAuthorInfoOnFullArticlePages(1)"> <!--PARAM OF articleTitleOnFAPages() & popAuthorInfoOnFullArticlePages() CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
-    <div id="full-article-page-container">
+<body onload="popGlobalHeaderOnFAAndTopicPages();articleTitleOnFAPages(1);popAuthorInfoOnFullArticlePages(1);popReadMoreNext(1)"> <!--PARAM OF articleTitleOnFAPages() & popAuthorInfoOnFullArticlePages() & popReadMoreNext() CORRESPONDS TO ARTICLE NUMBER, WHICH SHOULD BE IN DOC NAME-->
     <div id="full-article-page-container">
         <div class="socials-panel"></div>
     <div id="theme-button-container-container">
@@ -51,6 +50,7 @@
     </article>
     <!--Following div should be present on all full-article pages-->
     <div class="share-this-btns"></div>
+    <div class="read-more-next"></div>
     <!--START OMNIPRESENT CODE-->
     <footer></footer>
     <script src="../../js/popAuthorInfoOnFullArticlePgs.js"></script>
