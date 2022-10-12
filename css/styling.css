@@ -340,9 +340,6 @@ form button:hover {
 }
 
 .share-this-btns {
-    border-top: 2px dashed gray;
-    border-bottom: 2px dashed gray;
-    padding-bottom: 1%;
     margin: 0 10% 0 10%;
 }
 
