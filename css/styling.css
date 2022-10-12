@@ -340,7 +340,7 @@ form button:hover {
 }
 
 .share-this-btns {
-    margin: 0 10% 0 10%;
+    margin: 5% 10%;
 }
 
 .share-this-btns header {
@@ -348,5 +348,10 @@ form button:hover {
     color: var(--default-text-color);
     text-align: center;
     margin-bottom: 2%;
+}
+
+.read-more-next {
+    display: flex;
+    justify-content: space-around;
 }
 /* END FULL-ARTICLE PAGES STYLING */
