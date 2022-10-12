@@ -36,6 +36,7 @@ h2,
 header,
 p {
     font-family: var(--main-font);
+    color: var(--default-text-color);
 }
 
 h2 {
