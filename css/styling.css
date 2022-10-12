@@ -4,8 +4,10 @@
 }
 
 #topic-links-nav a {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: var(--main-font);
+    letter-spacing: 4px;
+    font-weight: 700;
 }
 
 #topic-links-nav a:hover {
