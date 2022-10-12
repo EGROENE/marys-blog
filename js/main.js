@@ -225,6 +225,10 @@ const popTopicLinksOnAllPosts = () => {
 // Function should only be called on the topic pages
 const topicPrevsAreas = document.getElementsByClassName('display-topic-articles');
 const popTopicPagePrevs = (topic) => {
+    // Sort order of prevs newest to oldest:
+    allPostPreviews.sort((a, b) => {
+        return b.dateNum - a.dateNum;
+    })
     // Populate first prev:
     for (let i = 0; i < 1; i++) {
         if (topic == allPostPreviews[i].postTopic.toLowerCase()) {
