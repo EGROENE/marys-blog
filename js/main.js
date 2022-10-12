@@ -212,7 +212,6 @@ const popTopicLinksOnAllPosts = () => {
         if (!postTopics.includes(allPostPreviews[i].postTopic)) {
             postTopics.push(allPostPreviews[i].postTopic);
         }
-        console.log(postTopics);
     }
     for (let i = 0; i < postTopics.length; i++) {
         topicLinksNavList.innerHTML +=
