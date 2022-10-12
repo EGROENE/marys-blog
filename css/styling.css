@@ -1,3 +1,18 @@
+/* STYLING OF TOPIC-LINKS NAVBAR, DISPLAYED ON ALLPOSTS PAGES */
+#topic-links-nav {
+    margin: 2% 25%;
+}
+
+#topic-links-nav a {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+}
+
+#topic-links-nav a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 /* STYLING OF POST PREVIEWS, TO BE DISPLAYED ON index.html & allposts */
 #sort-container {
     display: flex;

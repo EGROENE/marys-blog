@@ -205,7 +205,8 @@ button:not(:disabled):not(.disabled) {
     width: 50%;
 }
 
-#global-header-nav ul {
+#global-header-nav ul,
+#topic-links-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
