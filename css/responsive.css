@@ -166,6 +166,16 @@
     }
     /* END index.html STYLING */
 
+    /* START ALLPOSTS STYLING */
+    #topic-links-nav {
+        margin: 8% 8%;
+    }
+
+    #topic-links-nav a {
+        font-size: var(--size-24);
+    }
+    /* END ALLPOSTS STYLING */
+
     /* START CONTACT STYLING */
     .page-header {
         margin: 7% 0;
