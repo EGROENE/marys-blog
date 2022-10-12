@@ -204,6 +204,23 @@ const popPostPreviewsAll = (order) => {
     }
 }
 
+// Populate links to topic pages, to be displayed on allposts pages:
+const topicLinksNavList = document.getElementById('topic-links-nav-ul');
+const postTopics = [];
+const popTopicLinksOnAllPosts = () => {
+    for (let i = 0; i < allPostPreviews.length; i++) {
+        if (!postTopics.includes(allPostPreviews[i].postTopic)) {
+            postTopics.push(allPostPreviews[i].postTopic);
+        }
+        console.log(postTopics);
+    }
+    for (let i = 0; i < postTopics.length; i++) {
+        topicLinksNavList.innerHTML +=
+        "<li><a href='" + allPostPreviews[i].topicLinkFromAllPostsPages + "'>" + allPostPreviews[i].postTopic 
+        + "</a></li>"
+    }
+}
+
 // Populate topic-page prevs:
 // Function param should be equal to particular topic
 // Function should only be called on the topic pages
