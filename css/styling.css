@@ -1,4 +1,4 @@
-/* STYLING OF TOPIC-LINKS NAVBAR, DISPLAYED ON ALLPOSTS PAGES */
+/* STYLING OF TOPIC-LINKS NAVBAR, DISPLAYED ON gALLPOSTS PAGES */
 #topic-links-nav {
     margin: 3% 25%;
 }
@@ -353,5 +353,16 @@ form button:hover {
 .read-more-next {
     display: flex;
     justify-content: space-around;
+}
+
+.read-more-next a {
+    color: var(--theme-color-primary);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.read-more-next a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 /* END FULL-ARTICLE PAGES STYLING */
