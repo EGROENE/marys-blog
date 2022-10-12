@@ -262,7 +262,7 @@ const popTopicPagePrevs = (topic) => {
                 + 'data-title="' + allPostPreviews[i].postTitle + '"'
                 + 'data-text="' + allPostPreviews[i].prevText + '"'
                 + '>'
-                + '<a href="' + allPostPreviews[i].linkFromAllPosts + '">'
+                + '<a href="' + allPostPreviews[i].linkFromTopicPages + '">'
                 + '<h1>' + allPostPreviews[i].postTitle + '</h1>'
                 + '<div class="author-info-container">'
                 + '<img  src="' + allPostPreviews[i].authorImgFromFullArticleAndTopicPages + '"' + 'alt="' + allPostPreviews[i].authorImgAlt + '">'
