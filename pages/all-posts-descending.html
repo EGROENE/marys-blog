@@ -18,7 +18,7 @@
     <!--LINK TO FONTAWESOME KIT-->
     <script src="https://kit.fontawesome.com/5f2ab24bd1.js" crossorigin="anonymous"></script>
 </head>
-<body onload="popPostPreviewsAll(descending)">
+<body onload="popPostPreviewsAll(descending);popTopicLinksOnAllPosts()">
     <!--socials panel on left side (don't display on sizes smaller than tablet)-->
     <div class="socials-panel"></div>
     <!--theme-panel div is for toggling of light/dark themes-->
@@ -49,6 +49,9 @@
     </section>
     <h1 class="page-header">All Blog Posts</h1>
     <!--END OMNIPRESENT CODE-->
+    <nav id="topic-links-nav">
+        <ul id="topic-links-nav-ul"></ul>
+    </nav>
     <div id="sort-container">
         <div class="sort-items-container">
             <a id="to-ascending-link" href="./all-posts-ascending.html">SORT OLD TO NEW</a>
